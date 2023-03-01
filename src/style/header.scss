@@ -1,0 +1,97 @@
+.header{
+    width:100%;
+    height:500px;
+    background-image: url('../assets/Header.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y:center; 
+    @include flex_dlc(column,center,space-between);
+    &-ctn{
+        width:60%;
+        min-width: 1400px;
+        margin: 10px;
+        @include flex_dlc(row,center,space-between);
+    }
+    &-logo{
+        &-link{
+            @include flex_dlc(column,center,center);
+            text-decoration: none;
+            margin-left: 20px;
+            &:hover{
+                .header-logo-title{
+                    color: #FAC926;
+                }                
+            }
+        }
+        &-icon{
+            width:150px;
+            filter: drop-shadow(0px 0px 30px #FAC926);
+        }
+        &-title{
+            font-family: 'Astera';
+            color: white;
+            font-size: 20px;
+            transition: color ease-in-out 0.5s;            
+        }
+    }
+    &-nav{
+        margin-right: 20px;        
+        &-list{
+            @include flex_dlc(row, center,space-between);
+            width:300px;
+            list-style: none;
+        }
+        &-link{
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            transition: color ease-in-out 0.5s;
+            &:hover{
+                color: #FAC926;
+            }
+        }
+    }
+    &-shadow{
+        width: 100%;
+        height:100px;
+        background:linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    }
+}
+
+@media screen and (max-width:1400px){
+    .header{
+        &-ctn{
+            width:100%;
+            min-width: 0;
+        }              
+    }
+}
+
+@media screen and (max-width:991px){
+    .header{
+        &-ctn{
+            flex-direction: column;
+        }
+        &-logo{
+            &-link{
+                flex-direction: row;
+                margin: 10px 0px 20px 0px;
+            }
+            &-icon{
+                width:100px;
+                filter: drop-shadow(0px 0px 15px #FAC926);                
+            }
+            &-title{
+                margin: 10px 0px 0px 10px;
+                font-size:25px;
+            }
+        }
+        &-nav{
+            margin-right: 0px;
+            &-list{
+                width:300px;
+                padding-inline-start: 0em;
+            }
+        } 
+    }
+}

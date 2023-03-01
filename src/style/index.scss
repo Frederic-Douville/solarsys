@@ -1,0 +1,23 @@
+@import './mixins.scss';
+@import './fonts.scss';
+@import './header.scss';
+@import './footer.scss';
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+#root {
+  width: 100%;
+  font-family: 'A-space';
+}

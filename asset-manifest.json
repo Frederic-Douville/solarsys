@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/solarsys/static/css/main.883fd648.css",
+    "main.js": "/solarsys/static/js/main.dbfcb4d6.js",
+    "static/js/787.97786652.chunk.js": "/solarsys/static/js/787.97786652.chunk.js",
+    "static/media/Header.webp": "/solarsys/static/media/Header.33d6f6255aa2ed84f9c9.webp",
+    "static/media/A-Space Regular Demo.otf": "/solarsys/static/media/A-Space Regular Demo.e9772722c42905957230.otf",
+    "static/media/ASTERA v2.ttf": "/solarsys/static/media/ASTERA v2.37317f35434fc54ea056.ttf",
+    "static/media/Solar system logo.svg": "/solarsys/static/media/Solar system logo.6679def4a15b51a0fcf3e802e2e0d385.svg",
+    "index.html": "/solarsys/index.html",
+    "main.883fd648.css.map": "/solarsys/static/css/main.883fd648.css.map",
+    "main.dbfcb4d6.js.map": "/solarsys/static/js/main.dbfcb4d6.js.map",
+    "787.97786652.chunk.js.map": "/solarsys/static/js/787.97786652.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.883fd648.css",
+    "static/js/main.dbfcb4d6.js"
+  ]
+}

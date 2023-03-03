@@ -1,0 +1,99 @@
+.carousel{
+    width:1000px;
+    height: 200px;
+    margin: 10px;
+    @include flex_dlc(row,center,space-between);
+    &-angle{
+        &-ctn{
+            width:50px;
+            height:200px;
+            @include flex_dlc(column,center,center);
+        }
+        &-icon{
+            fill:$yellow-primary;
+            transition: fill ease-in-out 0.5s;
+            cursor: pointer;
+            &:hover{
+                fill: $blue-secondary;
+            }
+        }
+    }    
+}
+
+.planet{
+    &-ctn{
+        width:900px;
+        height: 200px;                      
+        @include flex_dlc(row,center,center);
+    }
+    &-item{
+        display:block;
+        height:100px;
+        opacity:0.5;
+        margin: 0 30px 0 30px;
+        animation: secondaryPlanetAnimation ease-in-out 1s both;                          
+    }
+    &-selected{
+        opacity: 1;
+        animation: mainPlanetAnimation ease-in-out 1s both;   
+    }
+    &-empty{
+        display: block;
+        width:100px ;
+        height:200px;
+    } 
+}
+
+@keyframes mainPlanetAnimation {
+    0%{ 
+        opacity: 0.5;
+        scale:1;        
+    }    
+    100%{
+        opacity: 1;
+        scale:2;       
+    }
+}
+
+@keyframes secondaryPlanetAnimation {
+    0%{
+        opacity:0.2;
+        scale:0.8;
+    }
+    100%{
+        opacity: 0.5;
+        scale:1;
+    }
+}
+
+@media screen and (max-width:991px){
+    .carousel{
+        width:90%;
+        height: 100px;       
+        &-angle{
+            &-ctn{
+                width:30px;
+                height:100px;
+            }           
+        }    
+    }
+    
+    .planet{
+        &-ctn{
+            width:250px;
+            height: 100px;                      
+        }
+        &-item{            
+            height:100px;
+            z-index: 0;           
+            margin: 0 10px 0 10px;                          
+        }
+        &-selected{
+            z-index: 20;               
+        }
+        &-empty{
+            width:100px ;
+            height:100px;
+        } 
+    }
+}

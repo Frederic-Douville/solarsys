@@ -1,6 +1,6 @@
 .header{
     width:100%;
-    height:500px;
+    height:400px;
     background-image: url('../assets/Header.webp');
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,13 +19,13 @@
             margin-left: 20px;
             &:hover{
                 .header-logo-title{
-                    color: #FAC926;
+                    color: $yellow-primary;
                 }                
             }
         }
         &-icon{
             width:150px;
-            filter: drop-shadow(0px 0px 30px #FAC926);
+            filter: drop-shadow(0px 0px 30px $yellow-primary);
         }
         &-title{
             font-family: 'Astera';
@@ -47,7 +47,7 @@
             text-decoration: none;
             transition: color ease-in-out 0.5s;
             &:hover{
-                color: #FAC926;
+                color: $yellow-primary;
             }
         }
     }
@@ -69,6 +69,7 @@
 
 @media screen and (max-width:991px){
     .header{
+        height:250px;
         &-ctn{
             flex-direction: column;
         }
@@ -79,7 +80,7 @@
             }
             &-icon{
                 width:100px;
-                filter: drop-shadow(0px 0px 15px #FAC926);                
+                filter: drop-shadow(0px 0px 15px $yellow-primary);                
             }
             &-title{
                 margin: 10px 0px 0px 10px;

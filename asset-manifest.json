@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/solarsys/static/css/main.741191b0.css",
-    "main.js": "/solarsys/static/js/main.e503ff3f.js",
+    "main.css": "/solarsys/static/css/main.4a62f56a.css",
+    "main.js": "/solarsys/static/js/main.f15b1263.js",
     "static/js/787.97786652.chunk.js": "/solarsys/static/js/787.97786652.chunk.js",
     "static/media/Header.webp": "/solarsys/static/media/Header.33d6f6255aa2ed84f9c9.webp",
     "static/media/A-Space Regular Demo.otf": "/solarsys/static/media/A-Space Regular Demo.e9772722c42905957230.otf",
@@ -22,12 +22,12 @@
     "static/media/arrow-up-right-from-square-solid.svg": "/solarsys/static/media/arrow-up-right-from-square-solid.8a28d8c8e5b28e33c2f527b37b7dd538.svg",
     "static/media/angle-right-solid.svg": "/solarsys/static/media/angle-right-solid.2ff2fb8a393b897a1a49a13bb2de1712.svg",
     "static/media/angle-left-solid.svg": "/solarsys/static/media/angle-left-solid.2b904bc4fecd531afcb5e2f5b4dd6538.svg",
-    "main.741191b0.css.map": "/solarsys/static/css/main.741191b0.css.map",
-    "main.e503ff3f.js.map": "/solarsys/static/js/main.e503ff3f.js.map",
+    "main.4a62f56a.css.map": "/solarsys/static/css/main.4a62f56a.css.map",
+    "main.f15b1263.js.map": "/solarsys/static/js/main.f15b1263.js.map",
     "787.97786652.chunk.js.map": "/solarsys/static/js/787.97786652.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.741191b0.css",
-    "static/js/main.e503ff3f.js"
+    "static/css/main.4a62f56a.css",
+    "static/js/main.f15b1263.js"
   ]
 }

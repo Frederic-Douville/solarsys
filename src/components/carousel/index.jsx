@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { ReactComponent as AngleLeft } from '../../assets/icones/angle-left-solid.svg';
 import { ReactComponent as AngleRight } from '../../assets/icones/angle-right-solid.svg';
-
 import { ReactComponent as Jupiter } from '../../assets/planets/Jupiter.svg';
 import { ReactComponent as Lune } from '../../assets/planets/Lune.svg';
 import { ReactComponent as Mars } from '../../assets/planets/Mars.svg';
@@ -16,12 +15,16 @@ import { ReactComponent as Venus } from '../../assets/planets/Venus.svg';
 
 function Carousel() {
     let [indexArray, setIndexArray] = useState(0);
+    let [slideTo, setSlideTo] = useState(0);
+
     const planetArray = [
         {
             item: (
                 <Soleil
                     className={`planet-item ${
-                        indexArray === 0 ? 'planet-selected' : null
+                        indexArray === 0
+                            ? 'planet-selected'
+                            : 'planet-unselected'
                     }`}
                     id="soleil"
                 />
@@ -32,7 +35,9 @@ function Carousel() {
             item: (
                 <Mercure
                     className={`planet-item ${
-                        indexArray === 1 ? 'planet-selected' : null
+                        indexArray === 1
+                            ? 'planet-selected'
+                            : 'planet-unselected'
                     }`}
                     id="mercure"
                 />
@@ -43,7 +48,9 @@ function Carousel() {
             item: (
                 <Venus
                     className={`planet-item ${
-                        indexArray === 2 ? 'planet-selected' : null
+                        indexArray === 2
+                            ? 'planet-selected'
+                            : 'planet-unselected'
                     }`}
                     id="venus"
                 />
@@ -54,7 +61,9 @@ function Carousel() {
             item: (
                 <Terre
                     className={`planet-item ${
-                        indexArray === 3 ? 'planet-selected' : null
+                        indexArray === 3
+                            ? 'planet-selected'
+                            : 'planet-unselected'
                     }`}
                     id="terre"
                 />
@@ -65,7 +74,9 @@ function Carousel() {
             item: (
                 <Lune
                     className={`planet-item ${
-                        indexArray === 4 ? 'planet-selected' : null
+                        indexArray === 4
+                            ? 'planet-selected'
+                            : 'planet-unselected'
                     }`}
                     id="lune"
                 />
@@ -76,7 +87,9 @@ function Carousel() {
             item: (
                 <Mars
                     className={`planet-item ${
-                        indexArray === 5 ? 'planet-selected' : null
+                        indexArray === 5
+                            ? 'planet-selected'
+                            : 'planet-unselected'
                     }`}
                     id="mars"
                 />
@@ -87,7 +100,9 @@ function Carousel() {
             item: (
                 <Jupiter
                     className={`planet-item ${
-                        indexArray === 6 ? 'planet-selected' : null
+                        indexArray === 6
+                            ? 'planet-selected'
+                            : 'planet-unselected'
                     }`}
                     id="jupiter"
                 />
@@ -98,7 +113,9 @@ function Carousel() {
             item: (
                 <Saturne
                     className={`planet-item ${
-                        indexArray === 7 ? 'planet-selected' : null
+                        indexArray === 7
+                            ? 'planet-selected'
+                            : 'planet-unselected'
                     }`}
                     id="saturne"
                 />
@@ -109,7 +126,9 @@ function Carousel() {
             item: (
                 <Uranus
                     className={`planet-item ${
-                        indexArray === 8 ? 'planet-selected' : null
+                        indexArray === 8
+                            ? 'planet-selected'
+                            : 'planet-unselected'
                     }`}
                     id="uranus"
                 />
@@ -120,7 +139,9 @@ function Carousel() {
             item: (
                 <Neptune
                     className={`planet-item ${
-                        indexArray === 9 ? 'planet-selected' : null
+                        indexArray === 9
+                            ? 'planet-selected'
+                            : 'planet-unselected'
                     }`}
                     id="neptune"
                 />
@@ -131,7 +152,9 @@ function Carousel() {
             item: (
                 <Pluton
                     className={`planet-item ${
-                        indexArray === 10 ? 'planet-selected' : null
+                        indexArray === 10
+                            ? 'planet-selected'
+                            : 'planet-unselected'
                     }`}
                     id="pluton"
                 />
@@ -144,6 +167,9 @@ function Carousel() {
         if (indexArray <= 0) {
             return;
         }
+        const slider = document.getElementById('slider');
+        setSlideTo((slideTo += 330));
+        slider.style.left = slideTo.toString() + 'px';
         setIndexArray((indexArray -= 1));
     }
 
@@ -151,6 +177,9 @@ function Carousel() {
         if (indexArray === planetArray.length - 1) {
             return;
         }
+        const slider = document.getElementById('slider');
+        setSlideTo((slideTo -= 330));
+        slider.style.left = slideTo.toString() + 'px';
         setIndexArray((indexArray += 1));
     }
 
@@ -162,20 +191,29 @@ function Carousel() {
                     onClick={slideToLeft}
                 />
             </div>
-            <div className="planet-ctn" id="planetCtn">
-                {indexArray > 0 ? (
-                    planetArray[indexArray - 1]?.item
-                ) : (
-                    <div className="planet-empty"></div>
-                )}
-
-                {planetArray[indexArray].item}
-
-                {indexArray < planetArray.length - 1 ? (
-                    planetArray[indexArray + 1]?.item
-                ) : (
-                    <div className="planet-empty"></div>
-                )}
+            <div className="planet-ctn">
+                <div className="carousel-angle-mobile-ctn carousel-angle-mobile-left">
+                    <AngleLeft
+                        className="carousel-angle-icon"
+                        onClick={slideToLeft}
+                    />
+                </div>
+                <div className="planet-slider" id="slider">
+                    {planetArray.map((elem) => (
+                        <div
+                            className="planet-slider-ctn"
+                            key={`key-${elem.id}`}
+                        >
+                            {elem.item}
+                        </div>
+                    ))}
+                </div>
+                <div className="carousel-angle-mobile-ctn carousel-angle-mobile-right">
+                    <AngleRight
+                        className="carousel-angle-icon"
+                        onClick={slideToRight}
+                    />
+                </div>
             </div>
             <div className="carousel-angle-ctn">
                 <AngleRight

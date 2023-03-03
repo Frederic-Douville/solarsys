@@ -1,9 +1,10 @@
-import { Carousel } from '../../components';
+import { Carousel, Description } from '../../components';
 
 function Home() {
     return (
         <div className="home">
             <Carousel />
+            <Description />
         </div>
     );
 }

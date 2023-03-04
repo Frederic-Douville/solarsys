@@ -2,7 +2,7 @@
     width:60%;
     height:400px;
     min-width: 1400px;
-    margin: 50px 10px 0 10px;
+    margin: 50px 10px 25px 10px;
     @include flex_dlc(row,center,space-around);
     &-img{
         width:100%;

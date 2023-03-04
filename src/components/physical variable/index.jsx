@@ -46,8 +46,7 @@ function PhysicalVariable({
                 ) : (
                     data
                 )}
-            </span>
-            <span className="physical-var-unit">
+                {'  '}
                 {isUnitExp === true ? (
                     <var>
                         {unit}

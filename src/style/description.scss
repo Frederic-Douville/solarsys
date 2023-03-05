@@ -63,6 +63,7 @@
 @media screen and (max-width:991px){
     .description{
         flex-direction: column-reverse;
+        margin-bottom: 0;
         &-img{
             width:100%;
             &-ctn{

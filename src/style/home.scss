@@ -15,9 +15,11 @@
     }
     &-incline{
         width:500px;
-        height: 500px;
-        background-color: rgb(38, 38, 38);
-        @include flex_dlc(column,flex-start,center)
+        @include flex_dlc(column,flex-start,flex-start);
+        &-diagram{
+            width:100%;
+            @include flex_dlc(row,center,center);
+        }
     }
     &-orbital{
         width:60%;
@@ -48,10 +50,6 @@
     .physical-data{
         &-ctn{
             flex-direction: column;
-            align-items: center;
-        }
-        &-general{
-            padding: 0 5px 0 5px;
         }
         &-incline{
             width:100%;

@@ -1,0 +1,28 @@
+.incline{
+    &-ctn{
+        width:300px;
+        height:300px;
+        margin-top: 10px;
+        border: 3px solid white;
+        border-radius: 50%;
+        position: relative;
+        @include flex_dlc(row,center,center);
+    }
+    &-line{        
+        background-color: white;
+        position: absolute;
+    }
+    &-horizontal{
+        width:300px;
+        height:3px;
+    }
+    &-vertical{
+        width:3px;
+        height:300px;
+    }
+    &-sphere{
+        margin: 0 5px 6px 0;
+        z-index:10;
+        width:200px;        
+    }
+}

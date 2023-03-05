@@ -5,8 +5,19 @@ function Description() {
         mercure:
             'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mercury_in_color_-_Prockter07_centered.jpg/1280px-Mercury_in_color_-_Prockter07_centered.jpg',
         venus: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg',
+        terre: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/1280px-The_Blue_Marble_%28remastered%29.jpg',
+        lune: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/1280px-FullMoon2010.jpg',
+        mars: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mars_Valles_Marineris_EDIT.jpg/1280px-Mars_Valles_Marineris_EDIT.jpg',
+        jupiter:
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/PIA22946-Jupiter-RedSpot-JunoSpacecraft-20190212.jpg/1280px-PIA22946-Jupiter-RedSpot-JunoSpacecraft-20190212.jpg',
+        saturne:
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Saturn_during_Equinox.jpg/2560px-Saturn_during_Equinox.jpg',
+        uranus: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Uranus2.jpg/1280px-Uranus2.jpg',
+        neptune:
+            'https://upload.wikimedia.org/wikipedia/commons/0/06/Neptune.jpg',
+        pluton: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Nh-pluto-in-true-color_2x.jpg/1280px-Nh-pluto-in-true-color_2x.jpg',
     };
-    const id = 'soleil';
+    const id = 'terre';
 
     return (
         <div className="description">
@@ -19,7 +30,7 @@ function Description() {
             </div>
             <div className="description-ctn">
                 <h1 className="description-title">
-                    {'LE ' + id.toUpperCase()}
+                    {'LA ' + id.toUpperCase()}
                 </h1>
                 <p className="description-content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -31,7 +42,12 @@ function Description() {
                     occaecat cupidatat non proident, sunt in culpa qui officia
                     deserunt mollit anim id est laborum.
                 </p>
-                <a className="description-wiki-link">
+                <a
+                    className="description-wiki-link"
+                    href="https://fr.wikipedia.org/wiki/Terre"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     Wikipedia{' '}
                     <ArrowUpFromSquare className="description-wiki-icon" />
                 </a>

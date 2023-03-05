@@ -1,4 +1,9 @@
-import { Carousel, Description, PhysicalVariable } from '../../components';
+import {
+    Carousel,
+    Description,
+    InclineDiagram,
+    PhysicalVariable,
+} from '../../components';
 
 function Home() {
     const physVarArray = [
@@ -125,9 +130,22 @@ function Home() {
                         )
                     )}
                 </div>
-                <div className="physical-data-incline"></div>
+                <div className="physical-data-incline">
+                    <PhysicalVariable
+                        icon="globe"
+                        title="Inclinaison"
+                        data="15"
+                        unit="°"
+                    />
+                    <div className="physical-data-incline-diagram">
+                        <InclineDiagram angle="-15deg" />
+                    </div>
+                </div>
             </div>
-            <div className="physical-data-orbital"></div>
+            <div className="physical-data-orbital">
+                <PhysicalVariable icon="circle" title="Donnée orbitales" />
+                <div className="physical-data-orbital-diagram"></div>
+            </div>
         </div>
     );
 }

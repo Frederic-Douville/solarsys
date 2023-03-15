@@ -8,7 +8,8 @@
         width:100%;
         &-ctn{
             width:500px;
-            height:500px;            
+            height:500px;
+            @include flex_dlc(row,center,center);            
         }        
     }
     &-ctn{
@@ -65,10 +66,10 @@
         flex-direction: column-reverse;
         margin-bottom: 0;
         &-img{
-            width:100%;
+            width:100%;            
             &-ctn{
                 width:80%;
-                height:auto;            
+                height:auto;                            
             }        
         }
         &-ctn{

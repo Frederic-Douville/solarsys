@@ -2,6 +2,7 @@ import {
     Carousel,
     Description,
     InclineDiagram,
+    OrbitalDiagram,
     PhysicalVariable,
 } from '../../components';
 
@@ -39,7 +40,7 @@ function Home() {
         },
         {
             icon: 'gem',
-            title: 'Densité',
+            title: 'Masse volumique',
             data: '5.51',
             exp: '',
             isExp: false,
@@ -73,7 +74,7 @@ function Home() {
             data: '20',
             exp: '',
             isExp: false,
-            unit: 'K',
+            unit: '°K',
             unitExp: '',
             isUnitExp: false,
         },
@@ -129,6 +130,12 @@ function Home() {
                             />
                         )
                     )}
+                    <div className="physical-data-orbital-title-desktop">
+                        <PhysicalVariable
+                            icon="circle"
+                            title="Donnée orbitales"
+                        />
+                    </div>
                 </div>
                 <div className="physical-data-incline">
                     <PhysicalVariable
@@ -143,8 +150,17 @@ function Home() {
                 </div>
             </div>
             <div className="physical-data-orbital">
-                <PhysicalVariable icon="circle" title="Donnée orbitales" />
-                <div className="physical-data-orbital-diagram"></div>
+                <div className="physical-data-orbital-title-mobile">
+                    <PhysicalVariable icon="circle" title="Donnée orbitales" />
+                </div>
+                <div className="physical-data-orbital-diagram">
+                    <OrbitalDiagram
+                        seminajorAxis={149598023}
+                        perihelion={147095000}
+                        aphelion={152100000}
+                        eccentricity={0.0167}
+                    />
+                </div>
             </div>
         </div>
     );

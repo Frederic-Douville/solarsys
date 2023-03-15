@@ -1,0 +1,212 @@
+.orbital{
+    &-ellipse{
+        width:95%;
+        height:1000px;
+        border-radius: 50%;
+        border:solid 3px white;
+        @include flex_dlc(row,center,center);
+        position:relative;
+    }
+    &-set-ctn{
+        width:100%;
+        height:100px;        
+        position: relative;
+    }
+
+    &-axis{
+        width:100%;
+        height:3px;
+        position:absolute;
+        background-color: white;
+        &-middle{
+            width:3px;
+            height:15px;
+        }        
+    }
+    &-measure{        
+        height:3px;
+        position :absolute;
+        z-index:12;
+        @include flex_dlc(row,center,center);
+        background-color: $green-tertiary;
+        &-perihelion{
+            width:40.5%;
+            top:0;
+            left:0;
+        }
+        &-aphelion{
+            width:59.5%;
+            top:0;
+            right:0;
+        }
+        &-seminajor{
+            width:50%;
+            bottom:0;
+            right:0;
+            background-color: $yellow-primary;
+        }
+    }
+    &-data{
+        position: absolute;
+        color: $green-tertiary;
+        font-size: 20px;
+        &-perihelion{
+            top: -35px;
+        }
+        &-aphelion{
+            top: -35px;
+        }   
+        &-seminajor{
+            color: $yellow-primary;
+            top: 10px;
+        }
+    }
+    &-icon{
+        position: absolute;
+        z-index: 15;        
+    }
+    &-sun{
+        width:66px;
+        left: -33px;
+        top:16px;
+    }
+    &-perihelion{
+        left:-15px;
+        top:35px;
+    }
+    &-aphelion{
+        right:-15px;
+        bottom:38px;
+    }
+}
+
+.angle{
+    width:15px;
+    position:absolute;
+    top:-14px;
+    &-left{
+        left:0;
+    }
+    &-right{
+        right:0;
+    }
+    &-green{
+        fill: $green-tertiary;
+    }
+    &-yellow{
+        fill: $yellow-primary;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .orbital{
+        &-ellipse{
+            width:95%;
+            height:800px;
+        }
+    }
+}
+
+@media screen and (max-width:991px){
+    .orbital{
+        &-ellipse{
+            width:95%;
+            height:600px;
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    .orbital{
+        &-ellipse{ 
+            height:600px;           
+            margin: 15px 0 15px 0;
+        }
+        &-set-ctn{
+            width:100px;
+            height: 100%;
+        }
+        &-axis{
+            width:15px;           
+            &-middle{
+                width:3px;                
+                height:100%;
+            }
+        }
+        &-measure{        
+            width:3px;            
+            &-perihelion{
+               height:40.5%;
+                top:0;
+                left:0;
+            }
+            &-aphelion{
+                height:59.5%;
+                top:40.5%;
+                left:0;
+            }
+            &-seminajor{
+                height:50%;
+                bottom:0;
+                right:0;               
+            }
+        }
+        &-data{
+            font-size: 15px;
+            width:150px;
+            text-shadow: 1px 1px 3px black;
+            &-perihelion{
+                right :-30px;
+                top: 45%;
+            }
+            &-aphelion{
+                right : -30px;
+                top: 45%;
+            }   
+            &-seminajor{ 
+                left:-35px;               
+                top: 45%;
+                width:175px;
+            }
+        }        
+        &-sun{            
+            top: -33px;
+            left:17px;           
+        }
+        &-perihelion{
+            top:-15px;
+            left:37px;
+            transform: rotate(90deg);            
+        }
+        &-aphelion{
+            bottom:-15px;
+            left:37px;
+            transform: rotate(90deg);            
+        }
+    }
+    .angle{        
+        transform: rotate(90deg);
+        &-left{
+            left:-6px;
+            top:-9px;
+        }
+        &-right{
+            right:-6px;
+            &-perihelion{
+                top:92%;
+            }
+            &-aphelion{
+                top:94%;
+            }
+            &-seminajor{
+                top:93%;
+            }            
+        }
+        &-green{
+            fill: $green-tertiary;
+        }
+        &-yellow{
+            fill: $yellow-primary;
+        }
+    }
+}

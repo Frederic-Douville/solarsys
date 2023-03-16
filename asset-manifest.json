@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.css": "/solarsys/static/css/main.9a074c97.css",
-    "main.js": "/solarsys/static/js/main.0fb56226.js",
+    "main.css": "/solarsys/static/css/main.d4fc1f7e.css",
+    "main.js": "/solarsys/static/js/main.1a86b3e5.js",
     "static/js/787.97786652.chunk.js": "/solarsys/static/js/787.97786652.chunk.js",
     "static/media/Header.webp": "/solarsys/static/media/Header.33d6f6255aa2ed84f9c9.webp",
+    "static/media/La Terre.jpg": "/solarsys/static/media/La Terre.23a8c6c2da0fe49cdf64.jpg",
     "static/media/incline sphere.svg": "/solarsys/static/media/incline sphere.346660dbdbb50f537323c6224aae046d.svg",
+    "static/media/Exo2.0-Regular.otf": "/solarsys/static/media/Exo2.0-Regular.5b97c8a6a9b9aa05b4be.otf",
     "static/media/A-Space Regular Demo.otf": "/solarsys/static/media/A-Space Regular Demo.e9772722c42905957230.otf",
     "static/media/Lune.svg": "/solarsys/static/media/Lune.f012e009ec6db69ade65da71adb664c9.svg",
+    "static/media/Prototype.ttf": "/solarsys/static/media/Prototype.be9924a47c44090561d7.ttf",
     "static/media/Mercure.svg": "/solarsys/static/media/Mercure.a21ca6837fdc4707a1deccd7f5612db8.svg",
     "static/media/Terre.svg": "/solarsys/static/media/Terre.6836f02f5e9babb4b7cdc3bc4d9bc092.svg",
     "static/media/Jupiter.svg": "/solarsys/static/media/Jupiter.57064aa62db5127cdcf4cd7045ba9abc.svg",
@@ -37,12 +40,12 @@
     "static/media/angle-left-solid.svg": "/solarsys/static/media/angle-left-solid.2b904bc4fecd531afcb5e2f5b4dd6538.svg",
     "static/media/perihelie sphere.svg": "/solarsys/static/media/perihelie sphere.86e376f4a1222ead94a183696339c52e.svg",
     "static/media/aphelie sphere.svg": "/solarsys/static/media/aphelie sphere.03fbe084537c90ed164d884d8aedd179.svg",
-    "main.9a074c97.css.map": "/solarsys/static/css/main.9a074c97.css.map",
-    "main.0fb56226.js.map": "/solarsys/static/js/main.0fb56226.js.map",
+    "main.d4fc1f7e.css.map": "/solarsys/static/css/main.d4fc1f7e.css.map",
+    "main.1a86b3e5.js.map": "/solarsys/static/js/main.1a86b3e5.js.map",
     "787.97786652.chunk.js.map": "/solarsys/static/js/787.97786652.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a074c97.css",
-    "static/js/main.0fb56226.js"
+    "static/css/main.d4fc1f7e.css",
+    "static/js/main.1a86b3e5.js"
   ]
 }

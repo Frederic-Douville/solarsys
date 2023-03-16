@@ -1,19 +1,18 @@
 .description{
-    width:60%;
-    height:400px;
-    min-width: 1400px;
+    width:1200px;
+    height:400px;    
     margin: 50px 10px 25px 10px;
-    @include flex_dlc(row,center,space-around);
+    @include flex_dlc(row,center,space-between);
     &-img{
         width:100%;
         &-ctn{
-            width:500px;
-            height:500px;
+            width:400px;
+            height:400px;
             @include flex_dlc(row,center,center);            
         }        
     }
     &-ctn{
-        width: 60%;
+        width: 700px;
         height:400px;
         color:white;
         @include flex_dlc(column,flex-start,flex-start)
@@ -39,7 +38,7 @@
     } 
 }
 
-@media screen and (max-width:1400px){
+@media screen and (max-width:1200px){
     .description{
         width: 100%;
         height: auto;

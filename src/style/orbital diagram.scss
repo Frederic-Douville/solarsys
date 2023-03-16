@@ -3,7 +3,7 @@
         width:95%;
         height:1000px;
         border-radius: 50%;
-        border:solid 3px white;
+        border:solid 2px white;
         @include flex_dlc(row,center,center);
         position:relative;
     }
@@ -15,11 +15,11 @@
 
     &-axis{
         width:100%;
-        height:3px;
+        height:2px;
         position:absolute;
         background-color: white;
         &-middle{
-            width:3px;
+            width:2px;
             height:15px;
         }        
     }
@@ -126,10 +126,10 @@
             width:100px;
             height: 100%;
         }
-        &-axis{
+        &-axis{            
             width:15px;           
             &-middle{
-                width:3px;                
+                width:2px;                
                 height:100%;
             }
         }
@@ -153,20 +153,20 @@
         }
         &-data{
             font-size: 15px;
-            width:150px;
+            width:85px;
             text-shadow: 1px 1px 3px black;
             &-perihelion{
-                right :-30px;
-                top: 45%;
+                right: 0px;
+                top: 55%;
             }
             &-aphelion{
-                right : -30px;
-                top: 45%;
+                right: 0px;
+                top: 30%;
             }   
             &-seminajor{ 
-                left:-35px;               
-                top: 45%;
-                width:175px;
+                left:10px;               
+                top: 17.5%;
+                width:110px;
             }
         }        
         &-sun{            
@@ -184,22 +184,23 @@
             transform: rotate(90deg);            
         }
     }
-    .angle{        
+    .angle{
+        width:11px;        
         transform: rotate(90deg);
         &-left{
-            left:-6px;
-            top:-9px;
+            left:-4px;
+            top:-8px;
         }
         &-right{
-            right:-6px;
+            right:-4px;
             &-perihelion{
-                top:92%;
+                top:93%;
             }
             &-aphelion{
-                top:94%;
+                top:96%;
             }
             &-seminajor{
-                top:93%;
+                top:95%;
             }            
         }
         &-green{

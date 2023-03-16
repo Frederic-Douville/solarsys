@@ -36,26 +36,28 @@ function PhysicalVariable({
 
     return (
         <div className="physical-var">
-            {iconList[icon]}
-            <span className="physical-var-title">{title}:</span>
-            <span className="physical-var-data">
-                {isExp === true ? (
-                    <var>
-                        {data}.10<sup>{exp}</sup>
-                    </var>
-                ) : (
-                    data
-                )}
-                {'  '}
-                {isUnitExp === true ? (
-                    <var>
-                        {unit}
-                        <sup>{unitExp}</sup>
-                    </var>
-                ) : (
-                    unit
-                )}
-            </span>
+            <span className="physical-var-iconCtn">{iconList[icon]}</span>
+            <div className="physical-var-dataCtn">
+                <span className="physical-var-title">{title}:</span>
+                <span className="physical-var-data">
+                    {isExp === true ? (
+                        <var>
+                            {data}.10<sup>{exp}</sup>
+                        </var>
+                    ) : (
+                        data
+                    )}
+                    {'  '}
+                    {isUnitExp === true ? (
+                        <var>
+                            {unit}
+                            <sup>{unitExp}</sup>
+                        </var>
+                    ) : (
+                        unit
+                    )}
+                </span>
+            </div>
         </div>
     );
 }

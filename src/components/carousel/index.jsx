@@ -187,7 +187,7 @@ function Carousel() {
         <div className="carousel">
             <div className="carousel-angle-ctn">
                 <AngleLeft
-                    className="carousel-angle-icon"
+                    className="carousel-angle-icon carousel-angle-left"
                     onClick={slideToLeft}
                 />
             </div>
@@ -217,7 +217,7 @@ function Carousel() {
             </div>
             <div className="carousel-angle-ctn">
                 <AngleRight
-                    className="carousel-angle-icon"
+                    className="carousel-angle-icon carousel-angle-right"
                     onClick={slideToRight}
                 />
             </div>

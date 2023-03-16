@@ -19,7 +19,6 @@ function OrbitalDiagram({ seminajorAxis, perihelion, aphelion, eccentricity }) {
         <div className="orbital-ellipse" id="ellipse">
             <div className="orbital-axis"></div>
             <div className="orbital-axis orbital-axis-middle"></div>
-
             <div className="orbital-set-ctn">
                 <div className="orbital-measure orbital-measure-perihelion">
                     <span className="orbital-data orbital-data-perihelion">

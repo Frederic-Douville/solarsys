@@ -3,9 +3,14 @@
     width:auto;
     height: auto;
     color:$yellow-primary;
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom:16px;
-    flex-wrap: wrap;        
+    flex-wrap: wrap;
+    &-iconCtn{
+        width:25px;
+        display: flex;
+        justify-content: center;
+    }        
     &-icon{
         fill:white;
         height:25px;

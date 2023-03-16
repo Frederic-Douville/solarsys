@@ -5,10 +5,9 @@
 
 .physical-data{
     &-ctn{
-        width:60%;
-        min-width:1400px;
+        width:1200px;        
         margin: 25px 10px 25px 10px; 
-        @include flex_dlc(row,flex-start,space-around)
+        @include flex_dlc(row,flex-start,space-between)
     }
     &-general{
         @include flex_dlc(column,flex-start,center)
@@ -18,12 +17,11 @@
         @include flex_dlc(column,flex-start,flex-start);
         &-diagram{
             width:100%;
-            @include flex_dlc(row,center,center);
+            @include flex_dlc(row,center,flex-end);
         }
     }
     &-orbital{
-        width:60%;
-        min-width:1400px;
+        width:1200px;        
         height: auto;
         margin: 25px 10px 25px 10px; 
         @include flex_dlc(column,flex-start,center);
@@ -42,7 +40,7 @@
 
 
 
-@media screen and (max-width:1400px){
+@media screen and (max-width:1200px){
     .physical-data{
         &-ctn{
             width: 100%;
@@ -72,7 +70,11 @@
         }
         &-incline{
             width:100%;
+            &-diagram{
+                justify-content: center;
+                    }
         }
+            
         &-orbital{            
             height: 600px;
             min-width: 0;

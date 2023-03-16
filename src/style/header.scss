@@ -7,8 +7,7 @@
     background-position-y:center; 
     @include flex_dlc(column,center,space-between);
     &-ctn{
-        width:60%;
-        min-width: 1400px;
+        width:1200px;        
         margin: 10px;
         @include flex_dlc(row,center,space-between);
     }
@@ -58,11 +57,10 @@
     }
 }
 
-@media screen and (max-width:1400px){
+@media screen and (max-width:1200px){
     .header{
         &-ctn{
-            width:100%;
-            min-width: 0;
+            width:100%;            
         }              
     }
 }

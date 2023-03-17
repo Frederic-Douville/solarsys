@@ -37,16 +37,17 @@
     height: 300px;
 }
 
-@media screen and (max-width:1400px){
+@media screen and (max-width:1200px){
     .physical-var{
         justify-content: flex-start;
+        margin-left: 5px;
     } 
 }
 
 @media screen and (max-width:991px){
     .physical-var{
         font-size: 18px;        
-        margin-left: 5px;
+        
         &-icon{
             height:20px;
         }

@@ -17,7 +17,6 @@ export function useAxiosGetDatas(id) {
                     response.data.map((item) =>
                         item.id === id ? setDatas(item) : null
                     );
-
                     setLoader(false);
                 });
             } catch (error) {
@@ -31,6 +30,5 @@ export function useAxiosGetDatas(id) {
         }
         getDatas();
     }, [urlGithub, id]);
-    console.log(datas);
     return { datas, loader, error };
 }

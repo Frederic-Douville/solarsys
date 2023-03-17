@@ -7,12 +7,12 @@ import {
     PhysicalVariable,
 } from '../../components';
 import { useAxiosGetDatas } from '../../hook/useAxios';
+import SolarSystem from '../../assets/Solar System 2.png';
 
 function Home() {
     const [id, setId] = useState('soleil');
 
     const { datas, loader, error } = useAxiosGetDatas(id);
-    console.log(datas.id);
 
     const physVarArray = [
         {
@@ -95,16 +95,6 @@ function Home() {
             unitExp: '',
             isUnitExp: false,
         },
-        {
-            icon: 'hourglass',
-            title: 'Période de révolution',
-            data: datas?.sideralOrbit,
-            exp: '',
-            isExp: false,
-            unit: 'Jours terrestres',
-            unitExp: '',
-            isUnitExp: false,
-        },
     ];
 
     return (
@@ -137,6 +127,15 @@ function Home() {
                             />
                         )
                     )}
+                    {id !== 'soleil' && (
+                        <PhysicalVariable
+                            icon="hourglass"
+                            title="Période de révolution"
+                            data={datas?.sideralOrbit}
+                            unit="Jours terrestres"
+                        />
+                    )}
+
                     {id === 'soleil' ? null : (
                         <div className="physical-data-orbital-title-desktop">
                             <PhysicalVariable
@@ -146,7 +145,15 @@ function Home() {
                         </div>
                     )}
                 </div>
-                {id === 'soleil' ? null : (
+                {id === 'soleil' ? (
+                    <div className="solar-system-ctn">
+                        <img
+                            src={SolarSystem}
+                            alt="système solaire"
+                            className="solar-system-img"
+                        />
+                    </div>
+                ) : (
                     <div className="physical-data-incline">
                         <PhysicalVariable
                             icon="globe"
@@ -173,6 +180,7 @@ function Home() {
                     </div>
                     <div className="physical-data-orbital-diagram">
                         <OrbitalDiagram
+                            id={id}
                             semimajorAxis={datas?.semimajorAxis}
                             perihelion={datas?.perihelion}
                             aphelion={datas?.aphelion}

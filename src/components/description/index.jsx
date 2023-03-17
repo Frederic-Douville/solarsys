@@ -12,25 +12,56 @@ import Neptune from '../../assets/planets pictures/Neptune.jpg';
 import Pluton from '../../assets/planets pictures/Pluton.jpg';
 
 function Description({ id, name }) {
-    const imgSrcArray = {
-        soleil: Soleil,
-        mercure: Mercure,
-        venus: Venus,
-        terre: Terre,
-        lune: Lune,
-        mars: Mars,
-        jupiter: Jupiter,
-        saturne: Saturne,
-        uranus: Uranus,
-        neptune: Neptune,
-        pluton: Pluton,
+    const descArray = {
+        soleil: {
+            imgSrc: Soleil,
+            wikiLink: 'https://fr.wikipedia.org/wiki/Soleil',
+        },
+        mercure: {
+            imgSrc: Mercure,
+            wikiLink: 'https://fr.wikipedia.org/wiki/Mercure_(plan%C3%A8te)',
+        },
+        venus: {
+            imgSrc: Venus,
+            wikiLink: 'https://fr.wikipedia.org/wiki/V%C3%A9nus_(plan%C3%A8te)',
+        },
+        terre: {
+            imgSrc: Terre,
+            wikiLink: 'https://fr.wikipedia.org/wiki/Terre',
+        },
+        lune: { imgSrc: Lune, wikiLink: 'https://fr.wikipedia.org/wiki/Lune' },
+        mars: {
+            imgSrc: Mars,
+            wikiLink: 'https://fr.wikipedia.org/wiki/Mars_(plan%C3%A8te)',
+        },
+        jupiter: {
+            imgSrc: Jupiter,
+            wikiLink: 'https://fr.wikipedia.org/wiki/Jupiter_(plan%C3%A8te)',
+        },
+        saturne: {
+            imgSrc: Saturne,
+            wikiLink: 'https://fr.wikipedia.org/wiki/Saturne_(plan%C3%A8te)',
+        },
+        uranus: {
+            imgSrc: Uranus,
+            wikiLink: 'https://fr.wikipedia.org/wiki/Uranus_(plan%C3%A8te)',
+        },
+        neptune: {
+            imgSrc: Neptune,
+            wikiLink: 'https://fr.wikipedia.org/wiki/Neptune_(plan%C3%A8te)',
+        },
+        pluton: {
+            imgSrc: Pluton,
+            wikiLink:
+                'https://fr.wikipedia.org/wiki/Pluton_(plan%C3%A8te_naine)',
+        },
     };
 
     return (
         <div className="description">
             <div className="description-img-ctn">
                 <img
-                    src={imgSrcArray[id]}
+                    src={descArray[id].imgSrc}
                     alt={`photographie de ${id}`}
                     className="description-img"
                 />
@@ -49,7 +80,7 @@ function Description({ id, name }) {
                 </p>
                 <a
                     className="description-wiki-link"
-                    href="https://fr.wikipedia.org/wiki/Terre"
+                    href={descArray[id].wikiLink}
                     target="_blank"
                     rel="noreferrer"
                 >

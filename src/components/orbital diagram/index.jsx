@@ -1,10 +1,11 @@
 import { ReactComponent as SunIcon } from '../../assets/analytics/sun sphere.svg';
+import { ReactComponent as Terre } from '../../assets/planets/Terre.svg';
 import { ReactComponent as AphelionPlanetIcon } from '../../assets/analytics/aphelie sphere.svg';
 import { ReactComponent as PerihelionPlanetIcon } from '../../assets/analytics/perihelie sphere.svg';
 import { ReactComponent as AngleLeftIcon } from '../../assets/icones/angle-left-solid.svg';
 import { ReactComponent as AngleRightIcon } from '../../assets/icones/angle-right-solid.svg';
 
-function OrbitalDiagram({ semimajorAxis, perihelion, aphelion }) {
+function OrbitalDiagram({ id, semimajorAxis, perihelion, aphelion }) {
     function dataIntoScientificNotation(data) {
         const dataExp = data?.toExponential().split('e+');
         const dataRound = Math.round(dataExp[0] * 1000) / 1000;
@@ -32,7 +33,12 @@ function OrbitalDiagram({ semimajorAxis, perihelion, aphelion }) {
                     <span className="orbital-data orbital-data-aphelion">
                         Aphélie: {dataIntoScientificNotation(aphelion)} km
                     </span>
-                    <SunIcon className="orbital-icon orbital-sun" />
+                    {id === 'lune' ? (
+                        <Terre className="orbital-icon orbital-sun" />
+                    ) : (
+                        <SunIcon className="orbital-icon orbital-sun" />
+                    )}
+
                     <AngleLeftIcon className="angle angle-left angle-green" />
                     <AngleRightIcon className="angle angle-right angle-right-aphelion angle-green" />
                 </div>

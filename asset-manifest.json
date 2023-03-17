@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/solarsys/static/css/main.448e1ff8.css",
-    "main.js": "/solarsys/static/js/main.feb7ad14.js",
+    "main.css": "/solarsys/static/css/main.46202d7a.css",
+    "main.js": "/solarsys/static/js/main.6104667b.js",
     "static/js/787.97786652.chunk.js": "/solarsys/static/js/787.97786652.chunk.js",
     "static/media/Header.webp": "/solarsys/static/media/Header.33d6f6255aa2ed84f9c9.webp",
+    "static/media/Solar System 2.png": "/solarsys/static/media/Solar System 2.70085ac3512cf5999ae8.png",
     "static/media/Terre.jpg": "/solarsys/static/media/Terre.23a8c6c2da0fe49cdf64.jpg",
     "static/media/Soleil.jpg": "/solarsys/static/media/Soleil.18829c079f3f1cdc8c84.jpg",
     "static/media/Jupiter.jpg": "/solarsys/static/media/Jupiter.e4b8196dc6037466f076.jpg",
@@ -50,12 +51,12 @@
     "static/media/angle-left-solid.svg": "/solarsys/static/media/angle-left-solid.2b904bc4fecd531afcb5e2f5b4dd6538.svg",
     "static/media/perihelie sphere.svg": "/solarsys/static/media/perihelie sphere.86e376f4a1222ead94a183696339c52e.svg",
     "static/media/aphelie sphere.svg": "/solarsys/static/media/aphelie sphere.03fbe084537c90ed164d884d8aedd179.svg",
-    "main.448e1ff8.css.map": "/solarsys/static/css/main.448e1ff8.css.map",
-    "main.feb7ad14.js.map": "/solarsys/static/js/main.feb7ad14.js.map",
+    "main.46202d7a.css.map": "/solarsys/static/css/main.46202d7a.css.map",
+    "main.6104667b.js.map": "/solarsys/static/js/main.6104667b.js.map",
     "787.97786652.chunk.js.map": "/solarsys/static/js/787.97786652.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.448e1ff8.css",
-    "static/js/main.feb7ad14.js"
+    "static/css/main.46202d7a.css",
+    "static/js/main.6104667b.js"
   ]
 }

@@ -1,24 +1,30 @@
 import { ReactComponent as ArrowUpFromSquare } from '../../assets/icones/arrow-up-right-from-square-solid.svg';
-import Terre from '../../assets/La Terre.jpg';
-function Description() {
+import Soleil from '../../assets/planets pictures/Soleil.jpg';
+import Mercure from '../../assets/planets pictures/Mercure.jpg';
+import Venus from '../../assets/planets pictures/Venus.jpg';
+import Terre from '../../assets/planets pictures/Terre.jpg';
+import Lune from '../../assets/planets pictures/Lune.jpg';
+import Mars from '../../assets/planets pictures/Mars.jpg';
+import Jupiter from '../../assets/planets pictures/Jupiter.jpg';
+import Saturne from '../../assets/planets pictures/Saturne.jpg';
+import Uranus from '../../assets/planets pictures/Uranus.jpg';
+import Neptune from '../../assets/planets pictures/Neptune.jpg';
+import Pluton from '../../assets/planets pictures/Pluton.jpg';
+
+function Description({ id, name }) {
     const imgSrcArray = {
-        soleil: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Solar_prominence_from_STEREO_spacecraft_September_29%2C_2008.jpg/1280px-Solar_prominence_from_STEREO_spacecraft_September_29%2C_2008.jpg',
-        mercure:
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mercury_in_color_-_Prockter07_centered.jpg/1280px-Mercury_in_color_-_Prockter07_centered.jpg',
-        venus: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg',
+        soleil: Soleil,
+        mercure: Mercure,
+        venus: Venus,
         terre: Terre,
-        lune: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/1280px-FullMoon2010.jpg',
-        mars: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mars_Valles_Marineris_EDIT.jpg/1280px-Mars_Valles_Marineris_EDIT.jpg',
-        jupiter:
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/PIA22946-Jupiter-RedSpot-JunoSpacecraft-20190212.jpg/1280px-PIA22946-Jupiter-RedSpot-JunoSpacecraft-20190212.jpg',
-        saturne:
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Saturn_during_Equinox.jpg/2560px-Saturn_during_Equinox.jpg',
-        uranus: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Uranus2.jpg/1280px-Uranus2.jpg',
-        neptune:
-            'https://upload.wikimedia.org/wikipedia/commons/0/06/Neptune.jpg',
-        pluton: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Nh-pluto-in-true-color_2x.jpg/1280px-Nh-pluto-in-true-color_2x.jpg',
+        lune: Lune,
+        mars: Mars,
+        jupiter: Jupiter,
+        saturne: Saturne,
+        uranus: Uranus,
+        neptune: Neptune,
+        pluton: Pluton,
     };
-    const id = 'terre';
 
     return (
         <div className="description">
@@ -30,9 +36,7 @@ function Description() {
                 />
             </div>
             <div className="description-ctn">
-                <h1 className="description-title">
-                    {'LA ' + id.toUpperCase()}
-                </h1>
+                <h1 className="description-title">{name?.toUpperCase()}</h1>
                 <p className="description-content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna

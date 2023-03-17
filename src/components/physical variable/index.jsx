@@ -34,6 +34,14 @@ function PhysicalVariable({
         weight: <WeightIcon className="physical-var-icon" />,
     };
 
+    function roundData(data) {
+        if (isNaN(data)) {
+            return;
+        }
+        const roundedData = Math.round(data * 100) / 100;
+        return roundedData;
+    }
+
     return (
         <div className="physical-var">
             <span className="physical-var-iconCtn">{iconList[icon]}</span>
@@ -42,10 +50,10 @@ function PhysicalVariable({
                 <span className="physical-var-data">
                     {isExp === true ? (
                         <var>
-                            {data}.10<sup>{exp}</sup>
+                            {roundData(data)}x10<sup>{exp}</sup>
                         </var>
                     ) : (
-                        data
+                        roundData(data)
                     )}
                     {'  '}
                     {isUnitExp === true ? (

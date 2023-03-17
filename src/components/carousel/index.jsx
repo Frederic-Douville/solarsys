@@ -13,7 +13,7 @@ import { ReactComponent as Terre } from '../../assets/planets/Terre.svg';
 import { ReactComponent as Uranus } from '../../assets/planets/Uranus.svg';
 import { ReactComponent as Venus } from '../../assets/planets/Venus.svg';
 
-function Carousel() {
+function Carousel({ setId }) {
     let [indexArray, setIndexArray] = useState(0);
     let [slideTo, setSlideTo] = useState(0);
 
@@ -171,6 +171,7 @@ function Carousel() {
         setSlideTo((slideTo += 330));
         slider.style.left = slideTo.toString() + 'px';
         setIndexArray((indexArray -= 1));
+        setId(planetArray[indexArray].id);
     }
 
     function slideToRight() {
@@ -181,6 +182,7 @@ function Carousel() {
         setSlideTo((slideTo -= 330));
         slider.style.left = slideTo.toString() + 'px';
         setIndexArray((indexArray += 1));
+        setId(planetArray[indexArray].id);
     }
 
     return (

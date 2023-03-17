@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
     Carousel,
     Description,
@@ -5,14 +6,18 @@ import {
     OrbitalDiagram,
     PhysicalVariable,
 } from '../../components';
+import { useAxiosGetDatas } from '../../hook/useAxios';
 
 function Home() {
+    const [id, setId] = useState('soleil');
+    const { datas, loader, error } = useAxiosGetDatas(id);
+
     const physVarArray = [
         {
             icon: 'weight',
             title: 'Masse',
-            data: '5,98',
-            exp: '24',
+            data: datas.mass?.massValue,
+            exp: datas.mass?.massExponent,
             isExp: true,
             unit: 'kg',
             unitExp: '',
@@ -21,8 +26,8 @@ function Home() {
         {
             icon: 'cube',
             title: 'Volume',
-            data: '1,08',
-            exp: '12',
+            data: datas.vol?.volValue,
+            exp: datas.vol?.volExponent,
             isExp: true,
             unit: 'm',
             unitExp: '3',
@@ -31,7 +36,7 @@ function Home() {
         {
             icon: 'ruler',
             title: 'Rayon moyen',
-            data: '2500',
+            data: datas?.meanRadius,
             exp: '',
             isExp: false,
             unit: 'km',
@@ -41,17 +46,17 @@ function Home() {
         {
             icon: 'gem',
             title: 'Masse volumique',
-            data: '5.51',
+            data: datas?.density * 1000,
             exp: '',
             isExp: false,
-            unit: 'g.cm',
+            unit: 'kg.m',
             unitExp: '3',
             isUnitExp: true,
         },
         {
             icon: 'gravity',
             title: 'Gravité',
-            data: '9.8',
+            data: datas?.gravity,
             exp: '',
             isExp: false,
             unit: 'm.s',
@@ -61,7 +66,7 @@ function Home() {
         {
             icon: 'rocket',
             title: "Vitesse d'échappement",
-            data: '11190',
+            data: datas?.escape,
             exp: '',
             isExp: false,
             unit: 'm.s',
@@ -71,17 +76,17 @@ function Home() {
         {
             icon: 'temperature',
             title: 'Température moyenne',
-            data: '20',
+            data: datas?.avgTemp - 273.15,
             exp: '',
             isExp: false,
-            unit: '°K',
+            unit: '°C',
             unitExp: '',
             isUnitExp: false,
         },
         {
             icon: 'stopwatch',
             title: 'Période de rotation',
-            data: '24',
+            data: datas?.sideralRotation,
             exp: '',
             isExp: false,
             unit: 'heures',
@@ -91,7 +96,7 @@ function Home() {
         {
             icon: 'hourglass',
             title: 'Période de révolution',
-            data: '365',
+            data: datas?.sideralOrbit,
             exp: '',
             isExp: false,
             unit: 'Jours terrestres',
@@ -102,8 +107,8 @@ function Home() {
 
     return (
         <div className="home">
-            <Carousel />
-            <Description />
+            <Carousel setId={setId} />
+            <Description id={id} name={datas?.name} />
             <div className="physical-data-ctn">
                 <div className="physical-data-general">
                     {physVarArray.map(
@@ -130,38 +135,48 @@ function Home() {
                             />
                         )
                     )}
-                    <div className="physical-data-orbital-title-desktop">
+                    {id === 'soleil' ? null : (
+                        <div className="physical-data-orbital-title-desktop">
+                            <PhysicalVariable
+                                icon="circle"
+                                title="Donnée orbitales"
+                            />
+                        </div>
+                    )}
+                </div>
+                {id === 'soleil' ? null : (
+                    <div className="physical-data-incline">
+                        <PhysicalVariable
+                            icon="globe"
+                            title="Inclinaison"
+                            data={datas?.inclination}
+                            unit="°"
+                        />
+                        <div className="physical-data-incline-diagram">
+                            <InclineDiagram
+                                angle={-datas?.inclination + 'deg'}
+                            />
+                        </div>
+                    </div>
+                )}
+            </div>
+            {id === 'soleil' ? null : (
+                <div className="physical-data-orbital">
+                    <div className="physical-data-orbital-title-mobile">
                         <PhysicalVariable
                             icon="circle"
                             title="Donnée orbitales"
                         />
                     </div>
-                </div>
-                <div className="physical-data-incline">
-                    <PhysicalVariable
-                        icon="globe"
-                        title="Inclinaison"
-                        data="15"
-                        unit="°"
-                    />
-                    <div className="physical-data-incline-diagram">
-                        <InclineDiagram angle="-15deg" />
+                    <div className="physical-data-orbital-diagram">
+                        <OrbitalDiagram
+                            semimajorAxis={datas?.semimajorAxis}
+                            perihelion={datas?.perihelion}
+                            aphelion={datas?.aphelion}
+                        />
                     </div>
                 </div>
-            </div>
-            <div className="physical-data-orbital">
-                <div className="physical-data-orbital-title-mobile">
-                    <PhysicalVariable icon="circle" title="Donnée orbitales" />
-                </div>
-                <div className="physical-data-orbital-diagram">
-                    <OrbitalDiagram
-                        seminajorAxis={149598023}
-                        perihelion={147095000}
-                        aphelion={152100000}
-                        eccentricity={0.0167}
-                    />
-                </div>
-            </div>
+            )}
         </div>
     );
 }

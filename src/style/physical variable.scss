@@ -3,13 +3,15 @@
     width:auto;
     height: auto;
     color:$yellow-primary;
-    font-size: 22px;
+    font-size: 25px;
     margin-bottom:16px;
-    flex-wrap: wrap;
     &-iconCtn{
         width:25px;
-        display: flex;
-        justify-content: center;
+        @include flex_dlc(column,center,center);
+    }
+    &-dataCtn{
+        @include flex_dlc(row,flex-end,flex-start);
+        flex-wrap: wrap;
     }        
     &-icon{
         fill:white;
@@ -43,7 +45,7 @@
 
 @media screen and (max-width:991px){
     .physical-var{
-        font-size: 15px;        
+        font-size: 18px;        
         margin-left: 5px;
         &-icon{
             height:20px;

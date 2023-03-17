@@ -4,13 +4,13 @@ import { ReactComponent as PerihelionPlanetIcon } from '../../assets/analytics/p
 import { ReactComponent as AngleLeftIcon } from '../../assets/icones/angle-left-solid.svg';
 import { ReactComponent as AngleRightIcon } from '../../assets/icones/angle-right-solid.svg';
 
-function OrbitalDiagram({ seminajorAxis, perihelion, aphelion, eccentricity }) {
+function OrbitalDiagram({ semimajorAxis, perihelion, aphelion }) {
     function dataIntoScientificNotation(data) {
-        const dataExp = data.toExponential().split('e+');
+        const dataExp = data?.toExponential().split('e+');
         const dataRound = Math.round(dataExp[0] * 1000) / 1000;
         return (
             <var>
-                {dataRound}.10<sup>{dataExp[1]}</sup>
+                {dataRound}x10<sup>{dataExp[1]}</sup>
             </var>
         );
     }
@@ -39,7 +39,7 @@ function OrbitalDiagram({ seminajorAxis, perihelion, aphelion, eccentricity }) {
                 <div className="orbital-measure orbital-measure-seminajor">
                     <span className="orbital-data orbital-data-seminajor">
                         Demi grand axe:{' '}
-                        {dataIntoScientificNotation(seminajorAxis)} km
+                        {dataIntoScientificNotation(semimajorAxis)} km
                     </span>
                     <AngleLeftIcon className="angle angle-left angle-yellow" />
                     <AngleRightIcon className="angle angle-right angle-right-seminajor angle-yellow" />

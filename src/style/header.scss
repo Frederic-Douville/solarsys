@@ -29,7 +29,8 @@
         &-title{
             font-family: 'Astera';
             color: white;
-            font-size: 20px;
+            font-size: 30px;
+            text-shadow: 1px 1px 3px black;
             transition: color ease-in-out 0.5s;            
         }
     }
@@ -42,7 +43,8 @@
         }
         &-link{
             color: white;
-            font-size: 20px;
+            text-shadow: 1px 1px 3px black;
+            font-size: 30px;
             text-decoration: none;
             transition: color ease-in-out 0.5s;
             &:hover{
@@ -86,9 +88,9 @@
             }
         }
         &-nav{
-            margin-right: 0px;
-            &-list{
-                width:300px;
+            margin-right: 0px;            
+            &-list{               
+                min-width:320px;
                 padding-inline-start: 0em;
             }
         } 

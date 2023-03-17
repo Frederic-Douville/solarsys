@@ -49,7 +49,7 @@
     &-data{
         position: absolute;
         color: $green-tertiary;
-        font-size: 20px;
+        font-size: 25px;
         &-perihelion{
             top: -35px;
         }
@@ -152,21 +152,21 @@
             }
         }
         &-data{
-            font-size: 15px;
-            width:85px;
+            font-size: 18px;
+            width:95px;
             text-shadow: 1px 1px 3px black;
             &-perihelion{
-                right: 0px;
-                top: 55%;
+                right: 5px;
+                top: 65%;
             }
             &-aphelion{
-                right: 0px;
+                right: 5px;
                 top: 30%;
             }   
             &-seminajor{ 
-                left:10px;               
-                top: 17.5%;
-                width:110px;
+                left:5px;               
+                top: 10%;
+                width:130px;
             }
         }        
         &-sun{            

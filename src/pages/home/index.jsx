@@ -10,7 +10,9 @@ import { useAxiosGetDatas } from '../../hook/useAxios';
 
 function Home() {
     const [id, setId] = useState('soleil');
+
     const { datas, loader, error } = useAxiosGetDatas(id);
+    console.log(datas.id);
 
     const physVarArray = [
         {
@@ -86,7 +88,7 @@ function Home() {
         {
             icon: 'stopwatch',
             title: 'Période de rotation',
-            data: datas?.sideralRotation,
+            data: Math.abs(datas?.sideralRotation),
             exp: '',
             isExp: false,
             unit: 'heures',
@@ -155,6 +157,7 @@ function Home() {
                         <div className="physical-data-incline-diagram">
                             <InclineDiagram
                                 angle={-datas?.inclination + 'deg'}
+                                rotationData={datas?.sideralRotation}
                             />
                         </div>
                     </div>

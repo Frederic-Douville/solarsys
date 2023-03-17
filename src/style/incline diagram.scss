@@ -25,7 +25,13 @@
         z-index:10;
         width:300px;        
     }
+    &-antiClockwise{
+        transform:scaleX(-1);
+    }
+    
 }
+
+
 
 @media screen and (max-width:991px){
     .incline{

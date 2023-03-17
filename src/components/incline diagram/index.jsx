@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { ReactComponent as InclineSphere } from '../../assets/analytics/incline sphere.svg';
 
-function InclineDiagram({ angle }) {
+function InclineDiagram({ angle, senseRotation }) {
     useEffect(() => {
         const globe = document.getElementById('sphere');
         globe.style.rotate = angle;

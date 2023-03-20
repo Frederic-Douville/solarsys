@@ -7,12 +7,12 @@ import {
     PhysicalVariable,
 } from '../../components';
 import { useAxiosGetDatas } from '../../hook/useAxios';
-import SolarSystem from '../../assets/Solar System 2.png';
+import SolarSystem from '../../assets/Solar System.png';
 
 function Home() {
     const [id, setId] = useState('soleil');
 
-    const { datas, loader, error } = useAxiosGetDatas(id);
+    const { datas } = useAxiosGetDatas(id);
 
     const physVarArray = [
         {
@@ -99,7 +99,7 @@ function Home() {
 
     return (
         <div className="home">
-            <Carousel setId={setId} />
+            <Carousel setId={setId} title={datas?.name} />
             <Description id={id} name={datas?.name} />
             <div className="physical-data-ctn">
                 <div className="physical-data-general">
@@ -165,6 +165,7 @@ function Home() {
                             <InclineDiagram
                                 angle={-datas?.inclination + 'deg'}
                                 rotationData={datas?.sideralRotation}
+                                id={id}
                             />
                         </div>
                     </div>
@@ -193,3 +194,5 @@ function Home() {
 }
 
 export default Home;
+
+// FAire un bouton en bas de page qui permet de revenir en haut

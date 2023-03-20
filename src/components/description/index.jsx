@@ -67,7 +67,6 @@ function Description({ id, name }) {
                 />
             </div>
             <div className="description-ctn">
-                <h1 className="description-title">{name?.toUpperCase()}</h1>
                 <p className="description-content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna

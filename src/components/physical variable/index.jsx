@@ -46,7 +46,7 @@ function PhysicalVariable({
         <div className="physical-var">
             <span className="physical-var-iconCtn">{iconList[icon]}</span>
             <div className="physical-var-dataCtn">
-                <span className="physical-var-title">{title}:</span>
+                <span className="physical-var-title">{title} :</span>
                 <span className="physical-var-data">
                     {isExp === true ? (
                         <var>

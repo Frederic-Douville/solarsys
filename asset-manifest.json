@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/solarsys/static/css/main.46202d7a.css",
-    "main.js": "/solarsys/static/js/main.6104667b.js",
+    "main.css": "/solarsys/static/css/main.6fbd839a.css",
+    "main.js": "/solarsys/static/js/main.77cb73c3.js",
     "static/js/787.97786652.chunk.js": "/solarsys/static/js/787.97786652.chunk.js",
     "static/media/Header.webp": "/solarsys/static/media/Header.33d6f6255aa2ed84f9c9.webp",
-    "static/media/Solar System 2.png": "/solarsys/static/media/Solar System 2.70085ac3512cf5999ae8.png",
+    "static/media/Solar System.png": "/solarsys/static/media/Solar System.0ac587fd320950029f40.png",
     "static/media/Terre.jpg": "/solarsys/static/media/Terre.23a8c6c2da0fe49cdf64.jpg",
     "static/media/Soleil.jpg": "/solarsys/static/media/Soleil.18829c079f3f1cdc8c84.jpg",
     "static/media/Jupiter.jpg": "/solarsys/static/media/Jupiter.e4b8196dc6037466f076.jpg",
@@ -15,7 +15,9 @@
     "static/media/Saturne.jpg": "/solarsys/static/media/Saturne.104c004fff7e33207c2b.jpg",
     "static/media/Uranus.jpg": "/solarsys/static/media/Uranus.bc53ffee2a6a49cbb990.jpg",
     "static/media/Lune.jpg": "/solarsys/static/media/Lune.5bf98f825b75bdff9f52.jpg",
-    "static/media/incline sphere.svg": "/solarsys/static/media/incline sphere.346660dbdbb50f537323c6224aae046d.svg",
+    "static/media/Saturne 2.jpg": "/solarsys/static/media/Saturne 2.3c089763793c9d5e2e92.jpg",
+    "static/media/Incline sphere 1.svg": "/solarsys/static/media/Incline sphere 1.35b824b8d3e24238745caea2e9eafce8.svg",
+    "static/media/Incline sphere 2.svg": "/solarsys/static/media/Incline sphere 2.de892dd236a7c30dc97879612e143ad2.svg",
     "static/media/Exo2.0-Regular.otf": "/solarsys/static/media/Exo2.0-Regular.5b97c8a6a9b9aa05b4be.otf",
     "static/media/Neptune.jpg": "/solarsys/static/media/Neptune.09f0ef2599799bb47e69.jpg",
     "static/media/A-Space Regular Demo.otf": "/solarsys/static/media/A-Space Regular Demo.e9772722c42905957230.otf",
@@ -35,7 +37,6 @@
     "static/media/Solar system logo.svg": "/solarsys/static/media/Solar system logo.6679def4a15b51a0fcf3e802e2e0d385.svg",
     "static/media/gravity.svg": "/solarsys/static/media/gravity.5f5d6ef706ead44206aba44ca5971f1f.svg",
     "static/media/globe-solid.svg": "/solarsys/static/media/globe-solid.e7aee42d697c84101ce11568d608c8aa.svg",
-    "static/media/sun sphere.svg": "/solarsys/static/media/sun sphere.09b525bfe020d9e0c45429b555093ed8.svg",
     "static/media/temperature-half-solid.svg": "/solarsys/static/media/temperature-half-solid.3ac99cd3b5baea8bdaedfab768c15288.svg",
     "static/media/rocket-solid.svg": "/solarsys/static/media/rocket-solid.27fcb6a2e915045540c1058fc1ecc2af.svg",
     "static/media/hourglass-half-solid.svg": "/solarsys/static/media/hourglass-half-solid.a596ca68c2110f5d1857800317ae4c19.svg",
@@ -49,14 +50,12 @@
     "static/media/cube-solid.svg": "/solarsys/static/media/cube-solid.a250fd94af47a2bb6d960c58c4a331d7.svg",
     "static/media/angle-right-solid.svg": "/solarsys/static/media/angle-right-solid.2ff2fb8a393b897a1a49a13bb2de1712.svg",
     "static/media/angle-left-solid.svg": "/solarsys/static/media/angle-left-solid.2b904bc4fecd531afcb5e2f5b4dd6538.svg",
-    "static/media/perihelie sphere.svg": "/solarsys/static/media/perihelie sphere.86e376f4a1222ead94a183696339c52e.svg",
-    "static/media/aphelie sphere.svg": "/solarsys/static/media/aphelie sphere.03fbe084537c90ed164d884d8aedd179.svg",
-    "main.46202d7a.css.map": "/solarsys/static/css/main.46202d7a.css.map",
-    "main.6104667b.js.map": "/solarsys/static/js/main.6104667b.js.map",
+    "main.6fbd839a.css.map": "/solarsys/static/css/main.6fbd839a.css.map",
+    "main.77cb73c3.js.map": "/solarsys/static/js/main.77cb73c3.js.map",
     "787.97786652.chunk.js.map": "/solarsys/static/js/787.97786652.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.46202d7a.css",
-    "static/js/main.6104667b.js"
+    "static/css/main.6fbd839a.css",
+    "static/js/main.77cb73c3.js"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/solarsys/static/css/main.6fbd839a.css",
-    "main.js": "/solarsys/static/js/main.77cb73c3.js",
+    "main.css": "/solarsys/static/css/main.7dbfa787.css",
+    "main.js": "/solarsys/static/js/main.2b46c1f9.js",
     "static/js/787.97786652.chunk.js": "/solarsys/static/js/787.97786652.chunk.js",
     "static/media/Header.webp": "/solarsys/static/media/Header.33d6f6255aa2ed84f9c9.webp",
     "static/media/Solar System.png": "/solarsys/static/media/Solar System.0ac587fd320950029f40.png",
@@ -15,12 +15,9 @@
     "static/media/Saturne.jpg": "/solarsys/static/media/Saturne.104c004fff7e33207c2b.jpg",
     "static/media/Uranus.jpg": "/solarsys/static/media/Uranus.bc53ffee2a6a49cbb990.jpg",
     "static/media/Lune.jpg": "/solarsys/static/media/Lune.5bf98f825b75bdff9f52.jpg",
-    "static/media/Saturne 2.jpg": "/solarsys/static/media/Saturne 2.3c089763793c9d5e2e92.jpg",
     "static/media/Incline sphere 1.svg": "/solarsys/static/media/Incline sphere 1.35b824b8d3e24238745caea2e9eafce8.svg",
     "static/media/Incline sphere 2.svg": "/solarsys/static/media/Incline sphere 2.de892dd236a7c30dc97879612e143ad2.svg",
-    "static/media/Exo2.0-Regular.otf": "/solarsys/static/media/Exo2.0-Regular.5b97c8a6a9b9aa05b4be.otf",
     "static/media/Neptune.jpg": "/solarsys/static/media/Neptune.09f0ef2599799bb47e69.jpg",
-    "static/media/A-Space Regular Demo.otf": "/solarsys/static/media/A-Space Regular Demo.e9772722c42905957230.otf",
     "static/media/Lune.svg": "/solarsys/static/media/Lune.f012e009ec6db69ade65da71adb664c9.svg",
     "static/media/Prototype.ttf": "/solarsys/static/media/Prototype.be9924a47c44090561d7.ttf",
     "static/media/Mercure.svg": "/solarsys/static/media/Mercure.a21ca6837fdc4707a1deccd7f5612db8.svg",
@@ -50,12 +47,12 @@
     "static/media/cube-solid.svg": "/solarsys/static/media/cube-solid.a250fd94af47a2bb6d960c58c4a331d7.svg",
     "static/media/angle-right-solid.svg": "/solarsys/static/media/angle-right-solid.2ff2fb8a393b897a1a49a13bb2de1712.svg",
     "static/media/angle-left-solid.svg": "/solarsys/static/media/angle-left-solid.2b904bc4fecd531afcb5e2f5b4dd6538.svg",
-    "main.6fbd839a.css.map": "/solarsys/static/css/main.6fbd839a.css.map",
-    "main.77cb73c3.js.map": "/solarsys/static/js/main.77cb73c3.js.map",
+    "main.7dbfa787.css.map": "/solarsys/static/css/main.7dbfa787.css.map",
+    "main.2b46c1f9.js.map": "/solarsys/static/js/main.2b46c1f9.js.map",
     "787.97786652.chunk.js.map": "/solarsys/static/js/787.97786652.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6fbd839a.css",
-    "static/js/main.77cb73c3.js"
+    "static/css/main.7dbfa787.css",
+    "static/js/main.2b46c1f9.js"
   ]
 }

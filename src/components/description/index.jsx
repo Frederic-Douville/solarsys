@@ -59,13 +59,7 @@ function Description({ id, name }) {
 
     return (
         <div className="description">
-            <div className="description-img-ctn">
-                <img
-                    src={descArray[id].imgSrc}
-                    alt={`photographie de ${id}`}
-                    className="description-img"
-                />
-            </div>
+            <h1 className="description-title">{name?.toUpperCase()}</h1>
             <div className="description-ctn">
                 <p className="description-content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

@@ -5,3 +5,4 @@ export { default as Description } from './description';
 export { default as InclineDiagram } from './incline diagram';
 export { default as OrbitalDiagram } from './orbital diagram';
 export { default as PhysicalVariable } from './physical variable';
+export { default as ScrollTopButton } from './scroll button';

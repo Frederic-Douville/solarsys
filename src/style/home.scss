@@ -23,7 +23,7 @@
     &-orbital{
         width:1200px;        
         height: auto;
-        margin: 25px 10px 25px 10px; 
+        margin: 25px 10px 25px 10px;
         @include flex_dlc(column,flex-start,center);
         &-title{
             &-mobile{

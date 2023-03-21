@@ -8,7 +8,7 @@ import Terre from '../../assets/planets pictures/Terre.jpg';
 import Lune from '../../assets/planets pictures/Lune.jpg';
 import Mars from '../../assets/planets pictures/Mars.jpg';
 import Jupiter from '../../assets/planets pictures/Jupiter.jpg';
-import Saturne from '../../assets/planets pictures/Saturne 2.jpg';
+import Saturne from '../../assets/planets pictures/Saturne.jpg';
 import Uranus from '../../assets/planets pictures/Uranus.jpg';
 import Neptune from '../../assets/planets pictures/Neptune.jpg';
 import Pluton from '../../assets/planets pictures/Pluton.jpg';
@@ -86,7 +86,13 @@ function Carousel({ setId, title }) {
                         onClick={goToPrevSlide}
                     />
                 </div>
-                {imagePlanetArray.map((image, index) => (
+                <img
+                    src={imagePlanetArray[currentIndex].imgSrc}
+                    alt={`Slide ${currentIndex}`}
+                    className="carousel-img 
+                            carousel-img-active"
+                />
+                {/* {imagePlanetArray.map((image, index) => (
                     <img
                         src={image.imgSrc}
                         alt={`Slide ${index}`}
@@ -95,10 +101,8 @@ function Carousel({ setId, title }) {
                             index === currentIndex ? 'carousel-img-active' : ''
                         }`}
                     />
-                ))}
-                <span className="carousel-title">{title?.toUpperCase()}</span>
-                <div className="carousel-shadow carousel-shadow-top"></div>
-                <div className="carousel-shadow carousel-shadow-bottom"></div>
+                ))} */}
+
                 <div className="carousel-angle-ctn carousel-angle-right">
                     <AngleRight
                         className="carousel-angle-icon"

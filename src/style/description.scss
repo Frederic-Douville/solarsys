@@ -1,18 +1,18 @@
 .description{
     width:1200px;
-    height:auto;    
+    height:auto;
+    background: linear-gradient(0deg, #1c1c1c 0%, #000000 100%);        
+    border-radius: 30px;    
     margin: 50px 10px 25px 10px;
     @include flex_dlc(column,flex-start,flex-start);    
     &-ctn{
         width: 100%;
-        height:auto;
-        background-color: #1c1c1c;
-        border-radius: 30px;
+        height:auto;        
         color:white;
         @include flex_dlc(column,flex-start,flex-start);        
     }
     &-title{
-        margin: 0px 0px 20px 20px;
+        margin: 10px 0px 10px 20px;
         color: white;
         font-size: 40px;
     }
@@ -38,21 +38,18 @@
 
 @media screen and (max-width:1200px){
     .description{
-        width: 100%;
+        width: 95%;
         height: auto;
         min-width: 0;        
         &-ctn{
             height:auto;            
         }
         &-title{
-            padding-left: 10px;
-        }
-        &-content{
-                 
-        }
+            margin-left: 10px;
+        }              
         &-wiki{
             &-link{
-                padding-left: 10px;
+                margin-left: 0px;
             }
         }                
     }

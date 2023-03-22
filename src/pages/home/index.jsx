@@ -99,7 +99,7 @@ function Home() {
 
     return (
         <div className="home">
-            <Carousel setId={setId} title={datas?.name} />
+            <Carousel setId={setId} />
             <Description id={id} name={datas?.name} />
             <div className="physical-data-ctn">
                 <div className="physical-data-general">
@@ -194,5 +194,3 @@ function Home() {
 }
 
 export default Home;
-
-// FAire un bouton en bas de page qui permet de revenir en haut

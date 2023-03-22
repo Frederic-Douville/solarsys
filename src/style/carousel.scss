@@ -1,7 +1,7 @@
 .carousel{
     width:1200px;
     height: 400px;
-    margin: 10px;
+    margin: 10px 10px 10px 10px;
     @include flex_dlc(row,center,center);
     &-items-ctn{
         width:100%;
@@ -11,47 +11,43 @@
         overflow: hidden;
         border-radius: 30px;                
     }
-    &-img{
-        display: none;
-        width: 400px;        
+    &-img{        
+        height: 400px;        
         position: absolute;
-        top:0px;    
-        animation:mainSlideAnimation ease-in-out 0.25s ;
-        &-active{
-            display: block;
-        }
-    }
-    &-title{
-        position: absolute;
-        top:50px;
-        right:25%;
-        font-size: 75px;
-        text-shadow: 1px 1px 3px black;
-        color:white;
-    }
+        top:0px;
+        &-animate{
+            animation:mainSlideAnimation ease-in-out 0.4s ;
+        }                
+    }    
     &-angle{
         &-ctn{
-            width:50px;
-            height:200px;
+            width:75px;
+            height:100%;
             @include flex_dlc(column,center,center);                
-            position:absolute;                
-            z-index: 20;
-            
+            position:absolute;
+            cursor: pointer;                
+            z-index: 20;            
+            &:hover{
+                .carousel-angle-icon{
+                    fill: $yellow-primary;
+                }
+            }            
         }
         &-left{
             left:0;
+            &:hover{
+                background: linear-gradient(90deg, #1c1c1c 0%, #000000 100%);
+            }
         }
         &-right{
             right:0;
+            &:hover{
+                background: linear-gradient(-90deg, #1c1c1c 0%, #000000 100%);
+            }
         }               
         &-icon{
             fill:white;
-            width: 30px;
-            transition: fill ease-in-out 0.5s;
-            cursor: pointer;
-            &:hover{
-                fill: $yellow-primary;
-            }
+            width: 30px;                       
         }        
     }     
 }
@@ -70,26 +66,19 @@
 
 @media screen and (max-width:1200px){
     .carousel{        
-        width:90%;
+        width:95%;
     }
 }
 
 @media screen and (max-width:991px){
-    .carousel{
-        
+    .carousel{        
         height: 300px;
         &-img{
-            width: 300px;
-        }
-        &-title{
-            top:auto;
-            right:auto;
-            font-size: 50px;          
-        }       
+            height: 300px;
+        }             
         &-angle{
             &-ctn{
-                width:30px;
-                height:100px;                
+                width:30px;                               
             }            
             &-icon{
                 width:20px;
@@ -102,7 +91,7 @@
     .carousel{        
         height: 250px;
         &-img{
-            width: 250px;
+            height: 250px;
         }
     }
 }

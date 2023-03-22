@@ -2,6 +2,7 @@
     &-ellipse{
         width:95%;
         height:1000px;
+        margin-bottom: 20px;
         border-radius: 50%;
         border:dashed 3px rgb(167, 167, 167);
         @include flex_dlc(row,center,center);
@@ -210,6 +211,14 @@
         }
         &-yellow{
             fill: $yellow-primary;
+        }
+    }
+}
+
+@media screen and (max-width:500px){
+    .orbital{
+        &-ellipse{ 
+            height:450px;
         }
     }
 }

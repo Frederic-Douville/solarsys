@@ -74,15 +74,12 @@ function Carousel({ setId }) {
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const currentImg = document.getElementById('current-img');
 
     const goToNextSlide = () => {
         const index =
             currentIndex === imagePlanetArray.length - 1 ? 0 : currentIndex + 1;
         setCurrentIndex(index);
         setId(imagePlanetArray[index].id);
-        currentImg.classList.remove('carousel-img-animate');
-        setTimeout(() => currentImg.classList.add('carousel-img-animate'), 0);
     };
 
     const goToPrevSlide = () => {
@@ -90,8 +87,6 @@ function Carousel({ setId }) {
             currentIndex === 0 ? imagePlanetArray.length - 1 : currentIndex - 1;
         setCurrentIndex(index);
         setId(imagePlanetArray[index].id);
-        currentImg.classList.remove('carousel-img-animate');
-        setTimeout(() => currentImg.classList.add('carousel-img-animate'), 0);
     };
 
     return (
@@ -103,12 +98,16 @@ function Carousel({ setId }) {
                 >
                     <AngleLeft className="carousel-angle-icon" />
                 </div>
-                <img
-                    src={imagePlanetArray[currentIndex].imgSrc}
-                    alt={`Slide ${currentIndex}`}
-                    className="carousel-img carousel-img-animate"
-                    id="current-img"
-                />
+                {imagePlanetArray.map((image, index) => (
+                    <img
+                        src={image.imgSrc}
+                        alt={`Slide ${index}`}
+                        key={index}
+                        className={`carousel-img ${
+                            index === currentIndex ? 'carousel-img-active' : ''
+                        }`}
+                    />
+                ))}
                 <div
                     className="carousel-angle-ctn carousel-angle-right"
                     onClick={goToNextSlide}
@@ -121,14 +120,3 @@ function Carousel({ setId }) {
 }
 
 export default Carousel;
-
-/*{imagePlanetArray.map((image, index) => (
-                    <img
-                        src={image.imgSrc}
-                        alt={`Slide ${index}`}
-                        key={index}
-                        className={`carousel-img ${
-                            index === currentIndex ? 'carousel-img-active' : ''
-                        }`}
-                    />
-                ))}*/

@@ -3,7 +3,7 @@ import { ReactComponent as SolarSysLogo } from '../../assets/Solar system logo.s
 
 function Header() {
     return (
-        <div className="header">
+        <div className="header" id="header">
             <div className="header-ctn">
                 <a
                     href="https://Frederic-Douville.github.io/solarsys"

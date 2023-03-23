@@ -5,6 +5,7 @@ import {
     InclineDiagram,
     OrbitalDiagram,
     PhysicalVariable,
+    ScrollTopButton,
 } from '../../components';
 import { useAxiosGetDatas } from '../../hook/useAxios';
 import SolarSystem from '../../assets/Solar System.webp';
@@ -95,65 +96,124 @@ function Home() {
             unitExp: '',
             isUnitExp: false,
         },
+        {
+            icon: 'hourglass',
+            title: 'Période de révolution',
+            data: datas?.sideralOrbit,
+            exp: '',
+            isExp: false,
+            unit: 'Jours terrestres',
+            unitExp: '',
+            isUnitExp: false,
+        },
     ];
+
+    const physVarArray1 = [];
+    const physVarArray2 = [];
+    for (let i in physVarArray) {
+        if (i <= 3) {
+            physVarArray1.push(physVarArray[i]);
+        } else if (i >= 4 && i <= 7) {
+            physVarArray2.push(physVarArray[i]);
+        }
+    }
 
     return (
         <div className="home">
             <Carousel setId={setId} />
             <Description id={id} name={datas?.name} />
-            <div className="physical-data-ctn">
-                <div className="physical-data-general">
-                    {physVarArray.map(
-                        ({
-                            icon,
-                            title,
-                            data,
-                            exp,
-                            isExp,
-                            unit,
-                            unitExp,
-                            isUnitExp,
-                        }) => (
-                            <PhysicalVariable
-                                icon={icon}
-                                title={title}
-                                data={data}
-                                exp={exp}
-                                isExp={isExp}
-                                unit={unit}
-                                unitExp={unitExp}
-                                isUnitExp={isUnitExp}
-                                key={`key-${title}`}
-                            />
-                        )
-                    )}
-                    {id !== 'soleil' && (
-                        <PhysicalVariable
-                            icon="hourglass"
-                            title="Période de révolution"
-                            data={datas?.sideralOrbit}
-                            unit="Jours terrestres"
-                        />
-                    )}
+            {id === 'soleil' ? (
+                <div className="physical-data-ctn">
+                    <div className="physical-data-general-sun">
+                        <div className="physical-data-general-box">
+                            {physVarArray1.map(
+                                ({
+                                    icon,
+                                    title,
+                                    data,
+                                    exp,
+                                    isExp,
+                                    unit,
+                                    unitExp,
+                                    isUnitExp,
+                                }) => (
+                                    <PhysicalVariable
+                                        icon={icon}
+                                        title={title}
+                                        data={data}
+                                        exp={exp}
+                                        isExp={isExp}
+                                        unit={unit}
+                                        unitExp={unitExp}
+                                        isUnitExp={isUnitExp}
+                                        key={`key-${title}`}
+                                    />
+                                )
+                            )}
+                        </div>
+                        <div className="physical-data-general-box">
+                            {physVarArray2.map(
+                                ({
+                                    icon,
+                                    title,
+                                    data,
+                                    exp,
+                                    isExp,
+                                    unit,
+                                    unitExp,
+                                    isUnitExp,
+                                }) => (
+                                    <PhysicalVariable
+                                        icon={icon}
+                                        title={title}
+                                        data={data}
+                                        exp={exp}
+                                        isExp={isExp}
+                                        unit={unit}
+                                        unitExp={unitExp}
+                                        isUnitExp={isUnitExp}
+                                        key={`key-${title}`}
+                                    />
+                                )
+                            )}
+                        </div>
+                    </div>
+                </div>
+            ) : (
+                <div className="physical-data-ctn">
+                    <div className="physical-data-general">
+                        {physVarArray.map(
+                            ({
+                                icon,
+                                title,
+                                data,
+                                exp,
+                                isExp,
+                                unit,
+                                unitExp,
+                                isUnitExp,
+                            }) => (
+                                <PhysicalVariable
+                                    icon={icon}
+                                    title={title}
+                                    data={data}
+                                    exp={exp}
+                                    isExp={isExp}
+                                    unit={unit}
+                                    unitExp={unitExp}
+                                    isUnitExp={isUnitExp}
+                                    key={`key-${title}`}
+                                />
+                            )
+                        )}
 
-                    {id === 'soleil' ? null : (
                         <div className="physical-data-orbital-title-desktop">
                             <PhysicalVariable
                                 icon="circle"
                                 title="Donnée orbitales"
                             />
                         </div>
-                    )}
-                </div>
-                {id === 'soleil' ? (
-                    <div className="solar-system-ctn">
-                        <img
-                            src={SolarSystem}
-                            alt="système solaire"
-                            className="solar-system-img"
-                        />
                     </div>
-                ) : (
                     <div className="physical-data-incline">
                         <PhysicalVariable
                             icon="globe"
@@ -161,6 +221,7 @@ function Home() {
                             data={datas?.inclination}
                             unit="°"
                         />
+
                         <div className="physical-data-incline-diagram">
                             <InclineDiagram
                                 angle={-datas?.inclination + 'deg'}
@@ -169,9 +230,18 @@ function Home() {
                             />
                         </div>
                     </div>
-                )}
-            </div>
-            {id === 'soleil' ? null : (
+                </div>
+            )}
+
+            {id === 'soleil' ? (
+                <div className="solar-system-ctn">
+                    <img
+                        src={SolarSystem}
+                        alt="système solaire"
+                        className="solar-system-img"
+                    />
+                </div>
+            ) : (
                 <div className="physical-data-orbital">
                     <div className="physical-data-orbital-title-mobile">
                         <PhysicalVariable
@@ -189,6 +259,7 @@ function Home() {
                     </div>
                 </div>
             )}
+            <ScrollTopButton />
         </div>
     );
 }

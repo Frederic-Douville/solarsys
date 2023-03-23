@@ -4,7 +4,7 @@
     height: auto;
     color:$yellow-primary;
     font-size: 25px;
-    margin-bottom:16px;
+    margin:0px 0px 16px 20px;
     &-iconCtn{
         width:25px;
         @include flex_dlc(column,center,center);
@@ -40,7 +40,7 @@
 @media screen and (max-width:1200px){
     .physical-var{
         justify-content: flex-start;
-        margin-left: 5px;
+        margin-left: 10px;
     } 
 }
 

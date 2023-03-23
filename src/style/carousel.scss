@@ -11,11 +11,13 @@
         overflow: hidden;
         border-radius: 30px;                
     }
-    &-img{        
+    &-img{
+        display:none;        
         height: 400px;        
         position: absolute;
-        top:0px;
-        &-animate{
+        top:0px;       
+        &-active{
+            display: block;
             animation:mainSlideAnimation ease-in-out 0.4s ;
         }                
     }    

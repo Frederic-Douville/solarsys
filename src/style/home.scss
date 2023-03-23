@@ -53,15 +53,17 @@
 
 .solar-system{
     &-ctn{
-        width: 1200px;
+        width: 1200px;       
         background: linear-gradient(0deg, #1c1c1c 0%, #000000 100%);        
         border-radius: 30px;
-        @include flex_dlc(row,center,center)
+        @include flex_dlc(row,center,center);
+        position:relative;
     }
     &-img{
         width:95%;
-        margin-bottom: 20px;
+        margin-bottom: 20px;        
     }
+    
 }
 
 

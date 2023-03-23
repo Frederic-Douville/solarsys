@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Footer, Header } from './components';
-import { Home, Notions, Error } from './pages';
+import { Home, Notions, Error, Credits } from './pages';
 import reportWebVitals from './reportWebVitals';
 import './style/index.scss';
 
@@ -14,6 +14,7 @@ root.render(
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route exact path="/notions" element={<Notions />} />
+                <Route exact path="/credits" element={<Credits />} />
                 <Route exact path="*" element={<Error />} />
             </Routes>
             <Footer />

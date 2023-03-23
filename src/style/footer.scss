@@ -1,16 +1,43 @@
 .footer{
     width:100%;
-    height: 100px;
-    @include flex_dlc(row,center,center);
+    height: 150px;
+    @include flex_dlc(column,center,center);
+    background: linear-gradient(180deg, #1c1c1c 0%, #000000 100%);
     &-ctn{
-        width:auto;
+        width:300px;
         height: 100px;
-        @include flex_dlc(row,center,center);
+        @include flex_dlc(column,center,center);
+        font-size: 18px;       
     }
-    &-text{
-        font-size: 25px;
+    &-links-ctn{
+        width:100%;
+    }
+    &-list{
+        width: 100%;
+        @include flex_dlc(row,center,space-between);
+        list-style: none;
+        padding-left:0;
+    }
+    &-link{
+        text-decoration: none;
+        color: white;
+        transition: color ease-in-out 0.25s;
+        &:hover{
+            color:$yellow-primary;
+        }        
+    }
+    &-github-icon{
+        width:20px;
+        fill:white;
+        transition: fill ease-in-out 0.25s;
+        &:hover{
+            fill:$yellow-primary;
+        }
+    }
+    &-copyright{
         color: white;
     }
+    
 }
 
 @media screen and (max-width:991px){

@@ -6,11 +6,12 @@
         border-radius: 50%;
         @include flex_dlc(row,center,center);
         cursor:pointer;
-        
+        margin: 20px;
         &-icon{
             width: 30px;
             fill:white;
-            animation: 2s ease-in-out infinite both arrowAnimation;
+            transition: fill ease-in-out 0.25s;
+            animation: 1s ease-in-out infinite both arrowAnimation;
         }
         &:hover{            
             .scrollTop-button-icon{

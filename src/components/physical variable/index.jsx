@@ -1,6 +1,6 @@
 import { ReactComponent as CircleDotIcon } from '../../assets/icones/circle-dot-regular.svg';
 import { ReactComponent as CubeIcon } from '../../assets/icones/cube-solid.svg';
-import { ReactComponent as GemIcon } from '../../assets/icones/gem-solid.svg';
+import { ReactComponent as DensityIcon } from '../../assets/icones/cube-weight-solid.svg';
 import { ReactComponent as GlobeIcon } from '../../assets/icones/globe-solid.svg';
 import { ReactComponent as GravityIcon } from '../../assets/icones/gravity.svg';
 import { ReactComponent as HourglassIcon } from '../../assets/icones/hourglass-half-solid.svg';
@@ -23,7 +23,7 @@ function PhysicalVariable({
     const iconList = {
         circle: <CircleDotIcon className="physical-var-icon" />,
         cube: <CubeIcon className="physical-var-icon" />,
-        gem: <GemIcon className="physical-var-icon" />,
+        gem: <DensityIcon className="physical-var-icon" />,
         globe: <GlobeIcon className="physical-var-icon" />,
         gravity: <GravityIcon className="physical-var-icon" />,
         hourglass: <HourglassIcon className="physical-var-icon" />,

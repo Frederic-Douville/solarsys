@@ -92,8 +92,11 @@ function Carousel({ setId }) {
     return (
         <div className="carousel">
             <div className="carousel-items-ctn">
+                <div className="carousel-angle-ctn carousel-angle-left">
+                    <AngleLeft className="carousel-angle-icon" />
+                </div>
                 <div
-                    className="carousel-angle-ctn carousel-angle-left"
+                    className="carousel-angle-mask carousel-angle-mask-left"
                     onClick={goToPrevSlide}
                 >
                     <AngleLeft className="carousel-angle-icon" />
@@ -108,8 +111,11 @@ function Carousel({ setId }) {
                         }`}
                     />
                 ))}
+                <div className="carousel-angle-ctn carousel-angle-right">
+                    <AngleRight className="carousel-angle-icon" />
+                </div>
                 <div
-                    className="carousel-angle-ctn carousel-angle-right"
+                    className="carousel-angle-mask carousel-angle-mask-right"
                     onClick={goToNextSlide}
                 >
                     <AngleRight className="carousel-angle-icon" />

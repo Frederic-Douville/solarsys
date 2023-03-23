@@ -4,7 +4,8 @@
     background-image: url('../assets/Header.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y:center; 
+    background-position-y:center;
+    position: relative; 
     @include flex_dlc(column,center,space-between);
     &-ctn{
         width:1200px;        
@@ -16,6 +17,7 @@
             @include flex_dlc(column,center,center);
             text-decoration: none;
             margin-left: 20px;
+            z-index:20;
             &:hover{
                 .header-logo-title{
                     color: $yellow-primary;
@@ -35,6 +37,7 @@
         }
     }
     &-nav{
+        z-index:20;
         margin-right: 20px;        
         &-list{
             @include flex_dlc(row, center,space-between);
@@ -53,6 +56,9 @@
         }
     }
     &-shadow{
+        position: absolute;
+        bottom: 0;
+        left:0;
         width: 100%;
         height:150px;
         background:linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);

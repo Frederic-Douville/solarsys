@@ -1,18 +1,18 @@
 import { useState } from 'react';
 import { ReactComponent as AngleLeft } from '../../assets/icones/angle-left-solid.svg';
 import { ReactComponent as AngleRight } from '../../assets/icones/angle-right-solid.svg';
-import Soleil from '../../assets/planets pictures/Soleil.jpg';
-import Mercure from '../../assets/planets pictures/Mercure.jpg';
-import Venus from '../../assets/planets pictures/Venus.jpg';
-import Terre from '../../assets/planets pictures/Terre.jpg';
-import Lune from '../../assets/planets pictures/Lune.jpg';
-import Mars from '../../assets/planets pictures/Mars.jpg';
-import Jupiter from '../../assets/planets pictures/Jupiter.jpg';
-import SaturneDesktop from '../../assets/planets pictures/Saturne 2.jpg';
-import SaturneMobile from '../../assets/planets pictures/Saturne.jpg';
-import Uranus from '../../assets/planets pictures/Uranus.jpg';
-import Neptune from '../../assets/planets pictures/Neptune.jpg';
-import Pluton from '../../assets/planets pictures/Pluton.jpg';
+import Soleil from '../../assets/planets pictures/Soleil.webp';
+import Mercure from '../../assets/planets pictures/Mercure.webp';
+import Venus from '../../assets/planets pictures/Venus.webp';
+import Terre from '../../assets/planets pictures/Terre.webp';
+import Lune from '../../assets/planets pictures/Lune.webp';
+import Mars from '../../assets/planets pictures/Mars.webp';
+import Jupiter from '../../assets/planets pictures/Jupiter.webp';
+import SaturneDesktop from '../../assets/planets pictures/Saturne 2.webp';
+import SaturneMobile from '../../assets/planets pictures/Saturne.webp';
+import Uranus from '../../assets/planets pictures/Uranus.webp';
+import Neptune from '../../assets/planets pictures/Neptune.webp';
+import Pluton from '../../assets/planets pictures/Pluton.webp';
 
 function Carousel({ setId }) {
     let [isDesktop, setIsDesktop] = useState();
@@ -121,3 +121,14 @@ function Carousel({ setId }) {
 }
 
 export default Carousel;
+
+/*{imagePlanetArray.map((image, index) => (
+                    <img
+                        src={image.imgSrc}
+                        alt={`Slide ${index}`}
+                        key={index}
+                        className={`carousel-img ${
+                            index === currentIndex ? 'carousel-img-active' : ''
+                        }`}
+                    />
+                ))}*/

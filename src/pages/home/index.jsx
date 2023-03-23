@@ -7,7 +7,7 @@ import {
     PhysicalVariable,
 } from '../../components';
 import { useAxiosGetDatas } from '../../hook/useAxios';
-import SolarSystem from '../../assets/Solar System.png';
+import SolarSystem from '../../assets/Solar System.webp';
 
 function Home() {
     const [id, setId] = useState('soleil');

@@ -1,57 +1,36 @@
 import { ReactComponent as ArrowUpFromSquare } from '../../assets/icones/arrow-up-right-from-square-solid.svg';
-import Soleil from '../../assets/planets pictures/Soleil.jpg';
-import Mercure from '../../assets/planets pictures/Mercure.jpg';
-import Venus from '../../assets/planets pictures/Venus.jpg';
-import Terre from '../../assets/planets pictures/Terre.jpg';
-import Lune from '../../assets/planets pictures/Lune.jpg';
-import Mars from '../../assets/planets pictures/Mars.jpg';
-import Jupiter from '../../assets/planets pictures/Jupiter.jpg';
-import Saturne from '../../assets/planets pictures/Saturne.jpg';
-import Uranus from '../../assets/planets pictures/Uranus.jpg';
-import Neptune from '../../assets/planets pictures/Neptune.jpg';
-import Pluton from '../../assets/planets pictures/Pluton.jpg';
 
 function Description({ id, name }) {
     const descArray = {
         soleil: {
-            imgSrc: Soleil,
             wikiLink: 'https://fr.wikipedia.org/wiki/Soleil',
         },
         mercure: {
-            imgSrc: Mercure,
             wikiLink: 'https://fr.wikipedia.org/wiki/Mercure_(plan%C3%A8te)',
         },
         venus: {
-            imgSrc: Venus,
             wikiLink: 'https://fr.wikipedia.org/wiki/V%C3%A9nus_(plan%C3%A8te)',
         },
         terre: {
-            imgSrc: Terre,
             wikiLink: 'https://fr.wikipedia.org/wiki/Terre',
         },
-        lune: { imgSrc: Lune, wikiLink: 'https://fr.wikipedia.org/wiki/Lune' },
+        lune: { wikiLink: 'https://fr.wikipedia.org/wiki/Lune' },
         mars: {
-            imgSrc: Mars,
             wikiLink: 'https://fr.wikipedia.org/wiki/Mars_(plan%C3%A8te)',
         },
         jupiter: {
-            imgSrc: Jupiter,
             wikiLink: 'https://fr.wikipedia.org/wiki/Jupiter_(plan%C3%A8te)',
         },
         saturne: {
-            imgSrc: Saturne,
             wikiLink: 'https://fr.wikipedia.org/wiki/Saturne_(plan%C3%A8te)',
         },
         uranus: {
-            imgSrc: Uranus,
             wikiLink: 'https://fr.wikipedia.org/wiki/Uranus_(plan%C3%A8te)',
         },
         neptune: {
-            imgSrc: Neptune,
             wikiLink: 'https://fr.wikipedia.org/wiki/Neptune_(plan%C3%A8te)',
         },
         pluton: {
-            imgSrc: Pluton,
             wikiLink:
                 'https://fr.wikipedia.org/wiki/Pluton_(plan%C3%A8te_naine)',
         },

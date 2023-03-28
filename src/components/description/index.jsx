@@ -13,7 +13,7 @@ function Description({ id, name }) {
             content_1:
                 "Mercure est la planète la plus proche du Soleil mais aussi la plus petite du système solaire. C’est une planète rocheuse et elle possède une atmosphère très mince. Son noyau, qui représente 85 % de son rayon, est composé essentiellement de métaux comme le fer, et son manteau contient principalement du silicate. La surface de Mercure est recouverte de cratères d'impact, de plaines lisses et de falaises escarpées. ",
             content_2:
-                'Observée dès l’antiquité, la planète doit son nom au messager des dieux romains "Mercure" en raison de la vitesse avec laquelle elle se déplace dans le ciel.  Sa proximité avec notre étoile implique qu\'elle ne peut être vue que près de l\'horizon avant le lever de soleil ou après le coucher du soleil. Deux sondes spatiales, Mariner 10 puis MESSENGER, ont été envoyé vers Mercure pour réaliser des études détaillées de sa topographie, de son histoire géologique, de son champ magnétique et de son exosphère. ',
+                'Observée dès l’antiquité, la planète doit son nom au messager des dieux romains "Mercure" en raison de la vitesse avec laquelle elle se déplace dans le ciel.  Sa proximité avec notre étoile implique qu\'elle ne peut être vue que près de l\'horizon avant le lever de soleil ou après le coucher du soleil. Deux sondes spatiales, Mariner 10 puis MESSENGER, ont été envoyées vers Mercure pour réaliser des études détaillées de sa topographie, de son histoire géologique, de son champ magnétique et de son exosphère. ',
             wikiLink: 'https://fr.wikipedia.org/wiki/Mercure_(plan%C3%A8te)',
         },
         venus: {

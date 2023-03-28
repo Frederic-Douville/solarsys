@@ -217,7 +217,7 @@ function Home() {
                     <div className="physical-data-incline">
                         <PhysicalVariable
                             icon="globe"
-                            title="Inclinaison"
+                            title="Inclinaison de l'axe"
                             data={datas?.inclinationAxe}
                             unit="°"
                         />

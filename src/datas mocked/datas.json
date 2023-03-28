@@ -9,7 +9,7 @@
         "perihelion": 0,
         "aphelion": 0,
         "eccentricity": 0,
-        "inclination": 0,
+        "inclinationAxe": 0,
         "mass": {
             "massValue": 1.989,
             "massExponent": 30
@@ -49,7 +49,7 @@
         "perihelion": 46001200,
         "aphelion": 69816900,
         "eccentricity": 0.2056,
-        "inclination": 7.0,
+        "inclinationAxe": 0.035,
         "mass": {
             "massValue": 3.30114,
             "massExponent": 23
@@ -89,7 +89,7 @@
         "perihelion": 107477000,
         "aphelion": 108939000,
         "eccentricity": 0.0067,
-        "inclination": 3.39,
+        "inclinationAxe": 177.36,
         "mass": {
             "massValue": 4.86747,
             "massExponent": 24
@@ -134,7 +134,7 @@
         "perihelion": 147095000,
         "aphelion": 152100000,
         "eccentricity": 0.0167,
-        "inclination": 0,
+        "inclinationAxe": 23.436,
         "mass": {
             "massValue": 5.97237,
             "massExponent": 24
@@ -174,7 +174,7 @@
         "perihelion": 363300,
         "aphelion": 405500,
         "eccentricity": 0.0549,
-        "inclination": 5.145,
+        "inclinationAxe": 6.687,
         "mass": {
             "massValue": 7.346,
             "massExponent": 22
@@ -226,7 +226,7 @@
         "perihelion": 206700000,
         "aphelion": 249200000,
         "eccentricity": 0.0935,
-        "inclination": 1.85,
+        "inclinationAxe": 25.19,
         "mass": {
             "massValue": 6.41712,
             "massExponent": 23
@@ -587,7 +587,7 @@
         "perihelion": 740379835,
         "aphelion": 816620000,
         "eccentricity": 0.0489,
-        "inclination": 1.304,
+        "inclinationAxe": 3.12,
         "mass": {
             "massValue": 1.89819,
             "massExponent": 27
@@ -956,7 +956,7 @@
         "perihelion": 1349823615,
         "aphelion": 1503509229,
         "eccentricity": 0.0565,
-        "inclination": 2.485,
+        "inclinationAxe": 26.73,
         "mass": {
             "massValue": 5.68336,
             "massExponent": 26
@@ -1105,7 +1105,7 @@
         "perihelion": 2734998229,
         "aphelion": 3006318143,
         "eccentricity": 0.0457,
-        "inclination": 0.772,
+        "inclinationAxe": 97.8,
         "mass": {
             "massValue": 8.68127,
             "massExponent": 25
@@ -1202,7 +1202,7 @@
         "perihelion": 4459753056,
         "aphelion": 4537039826,
         "eccentricity": 0.0113,
-        "inclination": 1.769,
+        "inclinationAxe": 28.32,
         "mass": {
             "massValue": 1.02413,
             "massExponent": 26
@@ -1263,7 +1263,7 @@
         "perihelion": 4436756954,
         "aphelion": 7376124302,
         "eccentricity": 0.2488,
-        "inclination": 17.16,
+        "inclinationAxe": 57.5,
         "mass": {
             "massValue": 1.303,
             "massExponent": 22

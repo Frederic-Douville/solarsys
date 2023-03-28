@@ -53,7 +53,7 @@ function Home() {
             exp: '',
             isExp: false,
             unit: 'kg.m',
-            unitExp: '3',
+            unitExp: '-3',
             isUnitExp: true,
         },
         {
@@ -218,14 +218,13 @@ function Home() {
                         <PhysicalVariable
                             icon="globe"
                             title="Inclinaison"
-                            data={datas?.inclination}
+                            data={datas?.inclinationAxe}
                             unit="°"
                         />
 
                         <div className="physical-data-incline-diagram">
                             <InclineDiagram
-                                angle={-datas?.inclination + 'deg'}
-                                rotationData={datas?.sideralRotation}
+                                angle={-datas?.inclinationAxe + 'deg'}
                                 id={id}
                             />
                         </div>

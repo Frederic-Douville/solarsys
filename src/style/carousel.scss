@@ -15,10 +15,15 @@
         display:none;        
         height: 400px;        
         position: absolute;
-        top:0px;       
+        top:0px; 
+        z-index: 30;
+            
         &-active{
             display: block;
             animation:mainSlideAnimation ease-in-out 0.4s ;
+            &::selection{
+                background: transparent;
+            }
         }                
     }    
     &-angle{
@@ -27,44 +32,33 @@
             height:100%;
             @include flex_dlc(column,center,center);                
             position:absolute;                            
-            z-index: 10;                       
+            z-index: 10;
+            cursor: pointer;
+            &:hover{                
+                .carousel-angle-icon{
+                    fill: $yellow-primary;
+                }
+            }                       
         }
         &-left{
-            left:0;                       
+            left:0;
+            &:hover{
+                background: linear-gradient(90deg, #1c1c1c 0%, #000000 100%); 
+            }
+                                  
         }
         &-right{
-            right:0;           
+            right:0;
+            &:hover{
+                background: linear-gradient(-90deg, #1c1c1c 0%, #000000 100%);
+            }
+                       
         }               
         &-icon{
             fill:white;
             width: 30px;
-            transition: fill ease-in-out 0.35s;
-            z-index: 30;                       
-        }
-        &-mask{
-            position:absolute;
-            @include flex_dlc(column,center,center);             
-            cursor: pointer;
-            width:75px;
-            height:100%;
-            z-index: 20;
-            opacity:0;
-            transition: opacity ease-in-out 0.35s;
-            &:hover{
-                opacity:1;
-                .carousel-angle-icon{
-                    fill: $yellow-primary;
-                }
-            }
-            &-left{
-                left:0;                
-                background: linear-gradient(90deg, #1c1c1c 0%, #000000 100%);         
-            }
-            &-right{
-                right:0;                
-                background: linear-gradient(-90deg, #1c1c1c 0%, #000000 100%);               
-            }
-        }        
+            transition: fill ease-in-out 0.25s;                                  
+        }               
     }     
 }
 

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { ReactComponent as InclineSphere1 } from '../../assets/analytics/Incline sphere 1.svg';
-import { ReactComponent as InclineSphere2 } from '../../assets/analytics/Incline sphere 2.svg';
+//import { ReactComponent as InclineSphere2 } from '../../assets/analytics/Incline sphere 2.svg';
 
 function InclineDiagram({ angle, id }) {
     useEffect(() => {
@@ -12,11 +12,12 @@ function InclineDiagram({ angle, id }) {
         <div className="incline-ctn">
             <div className="incline-line incline-horizontal"></div>
             <div className="incline-line incline-vertical"></div>
-            {id === 'venus' || id === 'pluton' || id === 'uranus' ? (
+            {/*id === 'venus' || id === 'pluton' || id === 'uranus' ? (
                 <InclineSphere2 className="incline-sphere" id="sphere" />
             ) : (
                 <InclineSphere1 className="incline-sphere" id="sphere" />
-            )}
+            )*/}
+            <InclineSphere1 className="incline-sphere" id="sphere" />
         </div>
     );
 }

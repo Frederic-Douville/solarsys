@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/solarsys/static/css/main.51869e7e.css",
-    "main.js": "/solarsys/static/js/main.409ad399.js",
+    "main.css": "/solarsys/static/css/main.7d8e7250.css",
+    "main.js": "/solarsys/static/js/main.7907c02a.js",
     "static/js/787.488e55b2.chunk.js": "/solarsys/static/js/787.488e55b2.chunk.js",
     "static/media/Header.webp": "/solarsys/static/media/Header.d81a323b237f5fd6950b.webp",
     "static/media/Terre.webp": "/solarsys/static/media/Terre.641e98ed8ea5d1d95f30.webp",
     "static/media/Jupiter.webp": "/solarsys/static/media/Jupiter.bb6c72bb369eaea8a506.webp",
     "static/media/Soleil.webp": "/solarsys/static/media/Soleil.f18e22a7a051310a8fa4.webp",
-    "static/media/Incline sphere 1.svg": "/solarsys/static/media/Incline sphere 1.35b824b8d3e24238745caea2e9eafce8.svg",
+    "static/media/Incline sphere.svg": "/solarsys/static/media/Incline sphere.ef8c88d5d41e57de04a484b9d5553771.svg",
     "static/media/Pluton.webp": "/solarsys/static/media/Pluton.15a757deef0d5b3abf7b.webp",
     "static/media/Mars.webp": "/solarsys/static/media/Mars.4f299bd342bbb8cc318a.webp",
     "static/media/Lune.webp": "/solarsys/static/media/Lune.aa054f2cd2aff07cffaf.webp",
@@ -49,12 +49,12 @@
     "static/media/arrow-up-solid.svg": "/solarsys/static/media/arrow-up-solid.e9b0865756b00d2bb67343218ab87f7d.svg",
     "static/media/angle-right-solid.svg": "/solarsys/static/media/angle-right-solid.2ff2fb8a393b897a1a49a13bb2de1712.svg",
     "static/media/angle-left-solid.svg": "/solarsys/static/media/angle-left-solid.2b904bc4fecd531afcb5e2f5b4dd6538.svg",
-    "main.51869e7e.css.map": "/solarsys/static/css/main.51869e7e.css.map",
-    "main.409ad399.js.map": "/solarsys/static/js/main.409ad399.js.map",
+    "main.7d8e7250.css.map": "/solarsys/static/css/main.7d8e7250.css.map",
+    "main.7907c02a.js.map": "/solarsys/static/js/main.7907c02a.js.map",
     "787.488e55b2.chunk.js.map": "/solarsys/static/js/787.488e55b2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.51869e7e.css",
-    "static/js/main.409ad399.js"
+    "static/css/main.7d8e7250.css",
+    "static/js/main.7907c02a.js"
   ]
 }

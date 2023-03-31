@@ -174,7 +174,7 @@
         "perihelion": 363300,
         "aphelion": 405500,
         "eccentricity": 0.0549,
-        "inclinationAxe": 6.687,
+        "inclinationAxe": 1.54,
         "mass": {
             "massValue": 7.346,
             "massExponent": 22
@@ -1202,7 +1202,7 @@
         "perihelion": 4459753056,
         "aphelion": 4537039826,
         "eccentricity": 0.0113,
-        "inclinationAxe": 28.32,
+        "inclinationAxe": 29.58,
         "mass": {
             "massValue": 1.02413,
             "massExponent": 26
@@ -1263,7 +1263,7 @@
         "perihelion": 4436756954,
         "aphelion": 7376124302,
         "eccentricity": 0.2488,
-        "inclinationAxe": 57.5,
+        "inclinationAxe": 122.53,
         "mass": {
             "massValue": 1.303,
             "massExponent": 22

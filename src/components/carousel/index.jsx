@@ -102,7 +102,7 @@ function Carousel({ setId }) {
                     <img
                         src={image.imgSrc}
                         alt={`Slide ${index}`}
-                        key={index}
+                        key={`img-${index}`}
                         className={`carousel-img ${
                             index === currentIndex ? 'carousel-img-active' : ''
                         }`}

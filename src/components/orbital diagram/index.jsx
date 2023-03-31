@@ -77,7 +77,8 @@ function OrbitalDiagram({ id, semimajorAxis, perihelion, aphelion }) {
             <div className="orbital-set-ctn">
                 <div className="orbital-measure orbital-measure-perihelion">
                     <span className="orbital-data orbital-data-perihelion">
-                        Périhelie: {dataIntoScientificNotation(perihelion)} km
+                        {id === 'lune' ? 'Périgée:' : 'Périhelie:'}{' '}
+                        {dataIntoScientificNotation(perihelion)} km
                     </span>
                     <AngleLeftIcon className="angle angle-left angle-green" />
                     <AngleRightIcon className="angle angle-right angle-right-perihelion angle-green" />
@@ -85,7 +86,8 @@ function OrbitalDiagram({ id, semimajorAxis, perihelion, aphelion }) {
 
                 <div className="orbital-measure orbital-measure-aphelion">
                     <span className="orbital-data orbital-data-aphelion">
-                        Aphélie: {dataIntoScientificNotation(aphelion)} km
+                        {id === 'lune' ? 'Apogée:' : 'Aphélie:'}{' '}
+                        {dataIntoScientificNotation(aphelion)} km
                     </span>
                     {id === 'lune'
                         ? planetIconArray.terre.iconSrc

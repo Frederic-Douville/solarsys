@@ -1,0 +1,51 @@
+.notionDef{
+    &-ctn{
+        box-sizing: border-box;
+        width:100%;
+        height:auto;
+        background: linear-gradient(0deg, #1c1c1c 0%, #000000 100%);        
+        border-radius: 30px;    
+        margin: 5px 10px 5px 10px;
+        color: white;
+        @include flex_dlc(column,flex-start,flex-start);
+        font-size: 20px;
+        text-align:justify;
+        padding: 0px 20px 0px 20px;
+    }
+    &-title{
+        font-size: 23px;
+        color: $blue-secondary;
+    }
+    &-links-ctn{
+        margin-top: 0;
+    }
+    &-link{       
+        margin-left:20px;
+        color: $blue-secondary;
+        transition: color ease-in-out 0.25s;
+        &:hover{
+            color:$yellow-primary;
+        }
+    }
+    &-exemple{
+        @include flex_dlc(row,flex-start,flex-start);
+        flex-wrap: wrap;
+        &-title{
+            margin-top:4px;
+        }
+        &-list{
+            margin-block-start: 0;        
+        } 
+    }    
+}
+
+@media screen and (max-width:991px){
+    .notionDef{
+        &-ctn{
+            font-size: 18px;
+        }
+        &-title{
+            font-size: 22px;
+        }
+    }
+}

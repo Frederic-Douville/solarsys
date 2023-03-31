@@ -58,7 +58,7 @@ function Home() {
         },
         {
             icon: 'gravity',
-            title: 'Gravité',
+            title: 'Gravité de surface',
             data: datas?.gravity,
             exp: '',
             isExp: false,

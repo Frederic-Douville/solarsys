@@ -1,0 +1,47 @@
+.error{
+    &-ctn{
+        @include flex_dlc(column,center,flex-start);
+        width:1200px;
+        color: white;
+        margin:auto;
+    }
+    &-nbr{
+        margin: 155px 0 50px 0;
+        font-size: 150px;
+    }
+    &-pitch{
+        font-size: 40px;
+        text-align: center;
+    }
+    &-link{
+        margin: 50px 0 200px 0;
+        font-size: 25px;        
+        color: $blue-secondary;
+        transition: color ease-in-out 0.25s;
+        &:hover{
+            color: $yellow-primary;
+        }
+    }
+}
+
+@media screen and (max-width:1200px){
+    .error-ctn{
+        width:95%;
+    }
+}
+
+@media screen and (max-width:991px)  {
+    .error{        
+        &-nbr{
+            margin: 10px 0 50px 0;
+            font-size: 100px;
+        }
+        &-pitch{
+            font-size: 20px;            
+        }
+        &-link{
+            margin: 50px 0 50px 0;
+            font-size: 20px;
+        }
+    }
+}

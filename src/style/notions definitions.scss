@@ -36,7 +36,62 @@
         &-list{
             margin-block-start: 0;        
         } 
+    }
+    &-animation{
+        &-0{
+            animation: notionTranslation 1s both ;
+        }
+        &-1{
+            animation: notionTranslation 1s both 0.25s;
+        }
+        &-2{
+            animation: notionTranslation 1s both 0.5s;
+        }
+        &-3{
+            animation: notionTranslation 1s both 0.75s;
+        }
+        &-4{
+            animation: notionTranslation 1s both 1s;
+        }
+        &-5{
+            animation: notionTranslation 1s both 1.25s;
+        }
+        &-6{
+            animation: notionTranslation 1s both 1.5s;
+        }
+        &-7{
+            animation: notionTranslation 1s both 1.75s;
+        }
+        &-8{
+            animation: notionTranslation 1s both 2s;
+        }
+        &-9{
+            animation: notionTranslation 1s both 2.25s;
+        }
+        &-10{
+            animation: notionTranslation 1s both 2.5s;
+        }
+        &-11{
+            animation: notionTranslation 1s both 2.75s;
+        }
+        &-12{
+            animation: notionTranslation 1s both 3s;
+        }
+        &-13{
+            animation: notionTranslation 1s both 3.25s;
+        }
     }    
+}
+
+@keyframes notionTranslation{
+    0%{
+        opacity: 0;
+        translate: 0px 30px;
+    }
+    100%{
+        opacity: 1;
+        translate:0px 0px;
+    }
 }
 
 @media screen and (max-width:991px){

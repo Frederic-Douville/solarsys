@@ -1,6 +1,6 @@
-function NotionDef({ title, definition, exemple, links }) {
+function NotionDef({ title, definition, exemple, links, classname }) {
     return (
-        <div className="notionDef-ctn">
+        <div className={classname}>
             <p className="notionDef-definition">
                 <span className="notionDef-title">{title} </span> {definition}
             </p>

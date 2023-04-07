@@ -215,6 +215,7 @@ function Notions() {
                     exemple={notion.exemple}
                     links={notion.links}
                     key={`notion-${index}`}
+                    classname={`notionDef-ctn notionDef-animation-${index}`}
                 />
             ))}
             <div className="notions-usefullLinks">

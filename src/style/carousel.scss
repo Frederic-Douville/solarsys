@@ -20,7 +20,7 @@
             
         &-active{
             display: block;
-            animation:mainSlideAnimation ease-in-out 0.4s ;
+            animation:mainSlideAnimation 0.5s both ;
             &::selection{
                 background: transparent;
             }
@@ -42,6 +42,7 @@
         }
         &-left{
             left:0;
+            animation: leftTranslation 1s both 1s ;
             &:hover{
                 background: linear-gradient(90deg, #1c1c1c 0%, #000000 100%); 
             }
@@ -49,6 +50,7 @@
         }
         &-right{
             right:0;
+            animation: rightTranslation 1s both 1s ;
             &:hover{
                 background: linear-gradient(-90deg, #1c1c1c 0%, #000000 100%);
             }
@@ -71,6 +73,28 @@
     }    
     100%{
         opacity: 1;              
+    }
+}
+
+@keyframes leftTranslation{
+    0%{
+        opacity: 0;
+        translate: -30px 0px;
+    }
+    100%{
+        opacity:1;
+        translate: 0px 0px;
+    }
+}
+
+@keyframes rightTranslation{
+    0%{
+        opacity: 0;
+        translate: 30px 0px;
+    }
+    100%{
+        opacity:1;
+        translate: 0px 0px;
     }
 }
 

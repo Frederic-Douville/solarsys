@@ -7,13 +7,15 @@
     &-ctn{
         width:1200px;        
         margin: 25px 10px 25px 10px; 
-        @include flex_dlc(row,flex-start,space-between)
+        @include flex_dlc(row,flex-start,space-between);
+        animation: ctnTranslation 1s both 1.75s;
     }
     &-general{
         @include flex_dlc(column,flex-start,center);
         &-sun{
             width:100%;
-            @include flex_dlc(row,center,space-between)
+            @include flex_dlc(row,center,space-between);
+             
         }
         &-box{
             @include flex_dlc(column,flex-start,center);
@@ -58,6 +60,7 @@
         border-radius: 30px;
         @include flex_dlc(row,center,center);
         position:relative;
+        animation: ctnTranslation 1s both 2s;
     }
     &-img{
         width:95%;
@@ -66,6 +69,16 @@
     
 }
 
+@keyframes ctnTranslation{
+    0%{
+        opacity: 0;
+        translate: 0px 30px;
+    }
+    100%{
+        opacity: 1;
+        translate:0px 0px;
+    }
+}
 
 @media screen and (max-width:1200px){
     .physical-data{
